@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th,td{
+             border: 1px solid lightcoral;
+             border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- Structures
+        Tables
+            - Structural data visualization of the data.
+            - contains rows and coloumns.
+            - Headers can be created for tables.
+            - The cross section of the rows and coloumns is called cell.
+            - A cell which will contain data.   
+    -->
+     
+    <p>Example of Table</p>
+    <table style="width: 100%;">       <!-- Table creation in HTML starts-->
+        <thead>   <!-- Table heading-->
+            <tr>   <!-- Table row-->
+               <th> <!-- Table heading data-->
+                Name
+               </th>
+               <th>
+                Age
+               </th>
+               <th>
+                Marks
+               </th>
+            </tr>
+        </thead>
+        <tbody>    <!-- Table body-->
+            <tr>    <!-- Table row-->
+                <td> <!-- Table data-->
+                    Joe
+                </td>
+                <td>
+                    20
+                </td>
+                <td>
+                    100
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Doe
+                </td>
+                <td>
+                    10
+                </td>
+                <td>
+                    90
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Herry
+                </td>
+                <td>
+                    30
+                </td>
+                <td>
+                    60
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>  <!-- Table footer-->
+            <tr>  <!-- Table row-->
+                <td> <!-- Table data-->
+                    Abhi
+                </td>
+                <td> <!-- Table data-->
+                    24
+                </td>
+                <td> <!-- Table data-->
+                    89
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+      
+    <!-- Merge of cells 
+           1. Row Merge
+              - rowspan
+            2. Coloumn Merge
+               - colspan
+    -->
+           <p> Merge Tables Example</p>
+           <table style="width: 100%;">       <!-- Table creation in HTML starts-->
+            <thead>   <!-- Table heading-->
+                <tr>   <!-- Table row-->
+                   <th> <!-- Table heading data-->
+                    Name
+                   </th>
+                   <th>
+                    Age
+                   </th>
+                   <th>
+                    Marks
+                   </th>
+                </tr>
+            </thead>
+            <tbody>    <!-- Table body-->
+                <tr>    <!-- Table row-->
+                    <td rowspan="2"> <!-- Table data-->
+                        Joe
+                    </td>
+                    <td>
+                        20
+                    </td>
+                    <td>
+                        100
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Doe
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        90
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Herry
+                    </td>
+                    <td colspan="2">
+                        30
+                    </td>
+                    <td>
+                        60
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>  <!-- Table footer-->
+                <tr>  <!-- Table row-->
+                    <td> <!-- Table data-->
+                        Abhi
+                    </td>
+                    <td> <!-- Table data-->
+                        24
+                    </td>
+                    <td> <!-- Table data-->
+                        89
+                    </td>
+                    </tr>
+                    </tfoot>
+                    </table>
+
+</body>
+</html>

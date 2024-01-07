@@ -1,0 +1,44 @@
+Syntax of CSS:
+h3{            ->h3: Selector; whatever CSS properties we are tagging to the Selector 
+                        will be placed inside the curly brackets.
+
+    background-color: rg(125,284,123);       -> background-color(key) : what needs to be declared for the 
+                                                                   specific selector.
+                                            
+                                             -> rg(..,..,..); (value) : specifying the properties of 
+                                             the key mentioned.
+}
+
+
+Selectors in CSS:
+             - A selector helps in selecting/targeting an HTML element, tag, class....etc.
+             - There are 5 types of selectors in CSS:
+                1. Element Selector (tag name)
+                2. ID Selector  (#)
+                3. class Selector (.)
+                4. Universal Selector (* or body tag)
+                5. Multiple/Group Selector (multiple tag,id selector,classs selector)
+
+Text-Allignment in CSS :
+             - Left Allignment 
+             - Right Allignment 
+             - Center Allignment 
+             - Justify Allignment 
+
+
+CSS BOX MODEL : 
+           - Content : The box which holds the Content.
+           - Padding : The ares between the content and the border.
+           - Border : The area between the margin and the padding.
+           - Margin : The area outside the border.
+
+CSS Visibility : 
+               display : none
+               visibility : hidden
+
+Google Fonts
+
+Display :
+      - Block Level
+      - Inline Level
+      - Inline Block Level

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 185px;
+            border: 1px solid red;
+            display: inline block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Example of BOX MODEL</h2>
+    <div style="background-color: lightpink; width: 100%;">
+    <div style="border: 5px solid darkgreen;
+        margin: 50px;padding: 15px; background-color: aqua;">
+        <p>Avul Pakir Jainulabdeen Abdul Kalam BR was an Indian aerospace scientist and statesman who served as the 11th president of India from 2002 to 2007.</p>
+    </div>
+</div>
+
+<div style="background-color: lightpink; width: 100%;padding: 50px;"> <!--padding used in outter block to give space to inside block-->
+    <div style="border: 5px solid darkgreen;
+      background-color: aqua; margin: 50px;">    <!--Margin used in inner block to give space to outside block-->
+        <p>Avul Pakir Jainulabdeen Abdul Kalam BR was an Indian aerospace scientist and statesman who served as the 11th president of India from 2002 to 2007.</p>
+    </div>
+</div>
+<hr>
+<!--Example of visibility-->
+<h2>Example of visibility</h2>
+<div style="background-color: lightpink; padding: 25px;">
+     
+        <img src="./dish_image.png" alt="dish image" style="visibility: hidden;" >
+   
+</div>
+<hr>
+<div style="background-color: lightpink; padding: 25px;">
+   
+        <img src="./dish_image.png" alt="dish image" style="display: none;">
+    
+
+</div>
+
+</body>
+</html>

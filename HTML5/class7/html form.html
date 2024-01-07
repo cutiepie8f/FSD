@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML FORM
+               - A form is added to collect multiple inputs from the user.
+               - A form will be having different kinds of input elements into it.
+               - Attributes in the form like "action" helps in defining the post submission action.
+    -->
+
+    <form action="./Thank You Page.html">
+        <label for="fname">First name : </label>
+        <!-- 
+            - A label tag is used to label a specific content of an input element.
+            - Attributes : 
+               > for: identifying the labeled link input element.
+               It connects to only a id of an element.
+        -->
+        <input type="text" id="fname" placeholder="First name" value="Jaya" readonly>
+        <!--
+            An input tag is used for inserting values/ data.
+            It is a self closing tag.
+            Attributes : 
+            - type: define the type of data can be inserted in this element.
+            - id: giving a unique name to the element in the web page.
+            - name: giving a aname to the element.
+            - value: helps in defining what's in the content.
+            - placeholder: gives an information in the input element as an example.
+
+            type - readonly
+                    - only key attribute in input element(no values)
+                    - makes the input element to be read only (user will not be able to enter)
+        -->
+        <br>
+        <br>
+        <label for="lname">Last name : </label>
+        <input type="text" id="lname" placeholder="Last name">
+        <br>
+        <br>
+        <label for="pwd">Password : </label>
+        <input type="password" id="pwd" placeholder="password" required>
+        <!--
+            type - password
+                    -Hides the content
+            
+            type - required
+                    - only key attribute in input element (no values)
+                    - it makes the input element mandatory to fill and submit.
+
+        -->
+
+        <br>
+        <br>
+        <label for="email">E-mail : &ensp;</label>
+        <input type="email" id="email" placeholder="email">
+        <!--
+            type - email
+               - check for email format value
+        -->
+        <br>
+        <br>
+        <label for="age">Age : &emsp;</label>
+        <input type="number" id="age" placeholder="Age" min="18" max="75">
+        <!--
+            type - number
+                  - only integer values it accepts.
+
+            max & min
+                 - accepts integer values only in input -> type-number
+                 - min : minimum number to be taken (lower limit).
+                 - max : maximum number to be taken (higher limit).
+        -->
+         <br>
+         <br>
+         <label for="dob">Date of birth : </label>
+         <input type="date" id="dob">
+         <br>
+         <br>
+         <label>Gender : </label>
+         <label for="male">Male</label>
+         <input type="radio" id="male" name="gender" value="Male">
+         <label for="female">Female</label>
+         <input type="radio" id="female" name="gender" value="Female">
+         <label for="other">Others</label>
+         <input type="radio" id="other" name="gender" value="Others">
+         <!--
+            type - radio
+                 - Selecting an option from the same group.
+                 - value : is the data that would be transmitted to the backend from the selected option.
+         -->
+         <br>
+         <br>
+        <label>Languages : </label>
+        <input type="checkbox" name="language" id="html" value="HTML">  
+        <label for="html">HTML</label> 
+        <input type="checkbox" name="language" id="css" value="CSS">  
+        <label for="css">CSS</label> 
+        <input type="checkbox" name="language" id="js" value="JavaScript">  
+        <label for="js">JavaScript</label>  
+        <!--
+            type - checkbox
+                   - selecting one or more option from the same group.
+        -->   
+        <br>
+        <br>
+        <label for="count">Country : </label>
+        <select id="count">
+            <option selected disabled>Select a Country</option>  <!--Placeholder in select-->
+            <option>India</option>
+            <option>China</option>
+            <option>America</option>
+            <option>USA</option>
+            <option>Australia</option>
+        </select>
+
+        <!--
+             - select tag is used to select from the given options.
+             - similar to a dropdown.
+             - option tag can be used only inside the select tag.
+             - Attributes : 
+                 > selected : making an option pre selected.
+                 > disabled : making an option disable to be selected.
+        -->
+        <br>
+        <br>
+        <input type="submit">    <!--Submit button-->
+        &emsp;
+        <input type="button" value="Go"> <!--Normal Button-->
+        <!--
+            Two ways to create button
+               - by input tag
+               - by button tag
+        -->
+        &emsp;
+        <button>Edureka</button>
+        &emsp;
+        <input type="reset">     <!--Reset Button-->
+
+
+        
+
+
+    </form>
+</body>
+</html>

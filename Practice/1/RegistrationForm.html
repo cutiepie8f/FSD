@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        h1{
+            color: red;
+            text-align: center;
+        }
+        label{
+            color: black;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        input{
+            background-color: lightskyblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            block-size: 25px;
+            width: 200px;
+            
+        }
+        select{
+            block-size: 25px;
+            width: 200px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-color: green;
+            color: black;
+            background-color: lightskyblue;
+        }
+        div{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Student Registration Form
+     </h1>
+     <div>
+     <form action="./Thank you page.html">
+        <label for="fname"><b>First Name</b></label>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <label for="lname"><b>Last Name</b></label>
+        <br>
+         <br>
+        <input type="text" id="fname" placeholder="First name">
+        &emsp;
+        <input type="text" id="lname" placeholder="Last name">
+        <br>
+        <br>
+        <label for="dob"><b>Date of Birth : </b></label>
+        <br>
+        <br>
+        <input type="date" id="dob" placeholder="Date of birth">
+        <br>
+        <br>
+        <label for="email"><b>Email : </b></label>
+        <br>
+        <br>
+        <input type="email" id="email" placeholder="email" required>
+        <br>
+        <br>
+        <label for="mobile"><b>Mobile Number : </b></label>
+        <br><br>
+        <input type="number" id="mobile">
+        <br><br>
+        <label><b>Gender : </b></label>
+        &emsp;
+        <label for="male"><b>Male</b></label>
+        <input type="radio" name="gender" id="male">
+        &emsp;
+        <label for="female"><b>Female</b></label>
+        <input type="radio" name="gender" id="female">
+        &emsp;
+        <label for="others"><b>Male</b></label>
+        <input type="radio" name="gender" id="others">
+        <br><br>
+        <label for="college"><b>College : &emsp;</b></label>
+        <select id="college">
+            <option selected disabled>Select College</option>
+            <option>Bansal College</option>
+            <option>RGPV College</option>
+            <option>Sagar College</option>
+            <option>NRI College</option>
+            <option>Oriental College</option>
+            <option>LNCT College</option>
+        </select>
+        <br><br>
+        <label><b>Technical Skills : </b></label>
+        &emsp;
+        <label for="html"><b>HTML</b></label>
+        <input type="checkbox" name="skill" id="html">
+        &emsp;
+        <label for="html"><b>CSS</b></label>
+        <input type="checkbox" name="skill" id="html">
+        &emsp;
+        <label for="js"><b>JavaScript</b></label>
+        <input type="checkbox" name="skill" id="js">
+        <br><br>
+        <input type="submit">
+        &emsp;
+        <input type="reset">
+    </form>
+</div>
+</body>
+</html>

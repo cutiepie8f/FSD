@@ -1,0 +1,9 @@
+Module - 02
+
+CSS - Cascading Style Sheet
+       Defining the styles (design, layouts, and variations) over the HTML structure of the web page.
+
+       Insert CSS in HTML:
+         -> Inline CSS
+         -> Internal CSS
+         -> Extrenal CSS

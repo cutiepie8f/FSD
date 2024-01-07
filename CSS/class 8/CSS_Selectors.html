@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h3{    /* Example of Element Selector*/
+            color: darkcyan;
+        }
+        #id_example{ /* Example of ID Selector*/
+            color: darkorange;
+            font-size: 20px;
+        } 
+        .class_example{    /* Example of class Selector*/
+            color: darkgreen;
+            font-size: 20px;
+        }
+        *{        
+            color: darkblue;               /* Example of universal Selector*/
+            /* color: darkblue !important;*/    
+            font-size: 20px;
+        }
+         /* color: darkblue !important;*/ 
+        /*this line will display every element blue coor even if the other element have define a color or not*/
+        
+        div,.group_example,#group_example{
+            color: lightcoral;
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2> Selectors Example </h2>
+    <!-- Example of Element Selector -->
+    <h3> Selectors Example </h3>
+    <!-- Example of ID Selector -->
+    <h5 id="id_example"> Selectors Example </h5>
+    <!-- Example of class Selector -->
+    <h5 class="class_example"> Selectors Example </h5>
+    <!-- Example of universal Selector -->
+    <h5> Selectors Example </h5>
+    <!-- Example of Multiple/Group Selector -->
+    <h5 class="group_example"> Multiple/Group Selector - 01 </h5>
+    <p id="group_example" style="font-weight: bold;">Multiple/Group Selector - 02</p>
+    <div>Multiple/Group Selector - 03</div>
+</body>
+</html>
