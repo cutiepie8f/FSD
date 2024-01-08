@@ -1,0 +1,18 @@
+Background Images
+        - uploading image through CSS
+        - Repeation of image
+        - Attachment of Image
+
+    Colors & Gradients
+        - Background Colors
+        - Color
+        - Borders & Colors
+        - Linear
+        - Radial
+        - Conic
+
+    Shadow:
+        - Text
+        - Box
+
+    Position:

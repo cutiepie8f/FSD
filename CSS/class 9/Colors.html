@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 130px;
+            margin: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!--colors-->
+    <div style="color: lightgreen; 
+                background-color: darkgreen;
+                height: 200px;
+                width: 200px;
+                border: 1px solid red;">
+                Hello World!...
+            
+    </div>
+
+     <!--GRADIENT
+         - Smoother transition of more than two colors.
+         There are three types of gradients:
+           - Linear Gradient.
+           - Radial Gradient.
+           - Conic Gradient.
+    -->
+    <h3>Linear Gradient</h3>
+    <div style="background-image: linear-gradient(yellow,orange);">
+       Linear Gradient(by default - up to down)
+    </div>
+    
+    <div style="background-image: linear-gradient(to left, yellow,orange);">
+        Linear Gradient(right to left)
+     </div>
+    
+     <div style="background-image: linear-gradient(300deg, yellow,rgb(255, 106, 0));">
+        Linear Gradient(diagonally - angle )
+     </div>
+      <!--OR-->
+      <div style="background-image: linear-gradient(to top left, yellow,rgb(255, 106, 0));">
+        Linear Gradient(diagonally - name )
+     </div>
+
+     <hr>
+     <!--Radial Gradient-->
+     <h3>Radial Gradient</h3>
+     <div style="background-image: radial-gradient(yellow,orange,red,blue);">
+        Radial Gradient(default )
+     </div>
+     <div style="background-image: radial-gradient(yellow 20%,orange 90%);">
+        Radial Gradient(positioning )
+     </div>
+     <div style="background-image: repeating-radial-gradient(yellow,orange 10%);">
+        Radial Gradient(Repeatition )
+     </div>
+     <hr>
+     <!--Conic gradient-->
+     <h3>Conic gradient</h3>
+     <div style="background-image: conic-gradient(yellow,orange);">
+        Conic Gradient(default )
+     </div>
+     <div style="background-image: conic-gradient(yellow 10%,orange 80%);">
+        Conic Gradient(positioning )
+     </div>
+     <div style="background-image: conic-gradient(yellow 5deg,orange 220deg);">
+        Conic Gradient(positioning of the point )
+     </div>
+     <div style="background-image: conic-gradient(yellow 0deg,orange 120deg, yellow 185deg);">
+        Conic Gradient(positioning of the point )
+     </div>
+     <div style="background-image: conic-gradient(yellow 0deg,orange 120deg, rgb(4,0,255) 185deg, rgb(89,198,22) 220deg);">
+        Conic Gradient(positioning of the point )
+     </div>
+     <div style="background-image: repeating-conic-gradient(yellow 10%,orange 50%);">
+        Conic Gradient(Repeatation )
+     </div>
+      <hr>
+      <!--Shadow
+            - text shadow
+            - box shadow
+    -->
+      <h3>Text Shadow</h3>
+       <p style="text-shadow: 1px 1px 1px #224457;">Text Shadow</p>
+    
+       <h4>Box shadow</h4>
+       <div style="box-shadow: 1px 1px 1px orange ;
+                    background-color: aquamarine;">
+        Box shadow
+       </div>
+       
+       <h3>Image box shadow</h3>
+       <img src="./bg_image.png" alt="bg image",width="90" height="50" style="box-shadow: 1px 1px 1px rgb(113, 47, 255);">
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .bg_logo{
+           display: block;
+           width:40px;
+           height: 40px;
+           background-color: lightcoral;
+           text-align: center;
+           border-radius: 50%;
+           /* font-size: 20px;  */
+}
+         #background{
+            background-image: url(./bg_image.png);
+            height: 500px;
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-attachment: scroll; */
+            background-attachment: fixed;
+         }
+     </style>
+
+
+</head>
+<body>
+    <!--Complete background part-->
+    <div id="background">
+        <!--logo div-->
+        <div class="bg_logo" style="display: flex; justify-content: center;
+                                       margin: auto;
+                                    /*align-items: center;*/">
+            <h2 style="font-size: 14px;">e!</h2>
+        </div>
+        <!--content-->
+        <div id="center_alighned" style="display: flex; justify-content: center;
+                                              margin: auto;
+                                        /*align-items: center;*/">
+            <h2>Find the best restaurants, cafés, and bars</h2>
+        </div>
+    </div>
+</body>
+</html>
