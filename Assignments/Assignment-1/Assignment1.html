@@ -8,13 +8,14 @@
          body{
             top: 0px;
             left: 0px;
-            /* width: 1366px; */
+            width: 1366px;
             height: 973px;
             background: #FBFBFB 0% 0% no-repeat padding-box;
             opacity: 1;
             border: #FBFBFB;
-            border-style:ridge;
-            /* margin-left: 75px; */
+            border-style:solid;
+            margin: auto;
+            box-shadow: 0px 3px 6px #00000029;
         }
         .logo{
             margin-top: 16px;
@@ -33,27 +34,27 @@
             margin-left: 102px;
             width: 50px;
             height: 50px;
-            border-radius: 96%;
+            border-radius: 50%;
             background: #FFFFFF 0% 0% no-repeat padding-box;
             opacity: 1;
-            margin-top: 25px;
+            margin-top: 20px;
             text-align: center;
+            position: relative;
         }
         .logo-header{
             height: 52px;
-            border-top: 15px;
             border-left: 102px;
             background-color: #CE0505;
             block-size: 90px;
-            margin-top: -30px;
         }
         .login{
             background-color: #CE0505;
                 color: #FFFFFF;
                 border: #CE0505;
-                margin-left: 1000px;
+                margin-left: 900px;
                 margin-top: 40px;
                 display: inline-block;
+                font: normal normal 16px/25px Poppins;
             }
         .create-account{
             top: 17px;
@@ -67,9 +68,11 @@
                 color: #FFFFFF;
                 background-color: #CE0505;
                 display: inline-block;
+                font: normal normal 16px/25px Poppins;
             }
             .heading{
             margin-top: 30px;
+            margin-left: 113px;
             width: 514px;
             height: 51px;
             margin-left: 100px;
@@ -77,7 +80,6 @@
             letter-spacing: 0px;
             color: #192F60;
             opacity: 1;
-            margin-left: 200px;
             }
             .section-1{
             top: 195px;
@@ -85,7 +87,7 @@
             width: 260px;
             height: 682px;
             margin-top: -10px;
-            margin-left: 200px;
+            margin-left: 100px;
             text-align: center;
             background: #FFFFFF 0% 0% no-repeat padding-box;
             box-shadow: 0px 3px 6px #00000029;
@@ -110,17 +112,19 @@
             }
             .location{
                 top: 247px;
-                left: 140px;
+                margin-left: -90px;
                 width: 106px;
                 height: 20px;
-                margin-right: 140px;
-                margin-left: 30px;
+                /* margin-right: 140px;
+                margin-left: 30px; */
                 text-align: left;
                 vertical-align: top;
                 font: normal normal normal 14px/21px Poppins;
                 letter-spacing: 0px;
                 color: #192F60;
                 opacity: 1;
+                font-weight: 600;
+                
             }
             .selected-location{
                 top: 100px;
@@ -133,7 +137,9 @@
                 vertical-align: 300px;
                 border: 1px solid #8C96AB;
                 border-radius: 3px;
-                opacity: 1
+                opacity: 1;
+                color: #8C96AB;
+                font: normal normal normal 14px/21px Poppins;
             }
             .cuisine{
                 margin-right: 30px;
@@ -167,7 +173,7 @@
             .section-2{
                 width: 794px;
                 height: 300px;
-                margin-left: 500px;
+                margin-left: 400px;
                 margin-top: -686px;
                 text-align: left;
                 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -182,7 +188,7 @@
                 width: 794px;
                 height: 300px;
                 /* margin-left: 400px; */
-                margin-top: 60px; 
+                margin-top: 55px; 
                 text-align: left;
                 background: #FFFFFF 0% 0% no-repeat padding-box;
                 box-shadow: 0px 3px 6px #00000029;
@@ -282,7 +288,7 @@
                 width: 40px;
                 height: 23px;
                 text-align: left;
-                font: normal normal medium 16px/30px Poppins;
+                font: normal normal 16px/30px Poppins;
                 letter-spacing: 0px;
                 color: #192F60;
                 opacity: 1;
@@ -320,6 +326,7 @@
                 /* width:80px; */
                 height: 5px;
                 margin-left: 50px;
+                font: normal normal normal 16px/30px Poppins;
             }
             .cost-1-price-detail{
                 width: 21px;
@@ -340,7 +347,7 @@
                 border: 1px solid #8C96AB;
                 border-radius: 7px;
                 opacity: 1;
-                font: normal normal medium 20px/30px Poppins;
+                font: normal normal 20px/30px Poppins;
                letter-spacing: 0px;
                color: #8C96AB;
                opacity: 1;
@@ -353,6 +360,10 @@
             .class-2{
                 background-color: #8C96AB;
                 color: #FFFFFF;
+            }
+            @font-face {
+                font-family: Poppins;
+                src: url(./Poppins-Regular.ttf);
             }
 
     </style>
@@ -457,7 +468,7 @@
                     
                     <h3 class="shop-1-heading-1">The Big Chill Cakery</h3>
                     <h4 class="shop-1-heading-2">FORT</h4>
-                    <h1 class="shop-1-heading-3">Shop 1, Plot D, Samruddhi Complex, Chincholi …</h1>
+                    <h1 class="shop-1-heading-3">Shop 1, Plot D, Samruddhi Complex, Chincholi…</h1>
                 
                 </div>
                 <hr>
@@ -480,7 +491,7 @@
                 </a>
                 <h3 class="shop-1-heading-1">The Bake Shop</h3>
                 <h4 class="shop-1-heading-2">FORT</h4>
-                <h1 class="shop-1-heading-3">Shop 1, Plot D, Samruddhi Complex, Chincholi …</h1>
+                <h1 class="shop-1-heading-3">Shop 1, Plot D, Samruddhi Complex, Chincholi…</h1>
             </div>
             <hr>
             <div class="price-1">

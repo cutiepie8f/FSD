@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <style>
         .root{
-            width: 1366px;
+            /* width: 1366px; */
             height: 1080px;
+            width: 1364px;
             background: #FBFBFB 0% 0% no-repeat padding-box;
             opacity: 1;
-            border: ridge;
+            border: solid;
             border-color: #FBFBFB;
-            margin-left: 60px;
+            margin: auto;
+            box-shadow: 0px 3px 6px #00000029;
+            /* margin-left: 60px; */
         }
         .section-1-img{
             height: 500px;
             width: 1366px;
+            background-image: url(//E:/FSD_HTML/Assignments/Assignment-2/image1.png);
+            background-repeat: no-repeat;
         }
         
         .heading-1{
-            margin-left: 113px;
+            margin-left: 165px;
             width: 239px;
             height: 43px;
             text-align: left;
@@ -30,10 +35,10 @@
             color: #192F60;
             opacity: 1;
             margin-top: 90px;
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
         }
         .heading-2{
-            margin-left: 113px;
+            margin-left: 165px;
             width: 331px;
             height: 25px;
             text-align: left;
@@ -42,7 +47,7 @@
             color: #8C96AB;
             opacity: 1;
             margin-top: -20px;
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
         }
         .food_block-1{
             margin-left: 113px;
@@ -99,6 +104,10 @@
         }
         .section-3{
             margin-top: 40px;
+            margin-left: 60px;
+        }
+        .section-4{
+            margin-left: 60px;
         }
         .text{
             margin-left: 406px;
@@ -110,7 +119,7 @@
             color: #FFFFFF;
             opacity: 1;
             margin-top: 240px;
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
         }
         .selected-location{
             width: 245px;
@@ -123,7 +132,7 @@
             margin-left: 406px;
             padding-left:25px;
             display: inline-block;
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
         }
         .selected-restraunt{
             width: 350px;
@@ -136,7 +145,7 @@
             margin-left: 50px;
             padding-left:25px;
             display: inline-block;
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
         }
         .restaurant-name{
             font-size: 20px;
@@ -179,10 +188,11 @@
             border: unset;
             font-size: 18px;
             margin-left: -30px;
-            font-family: Arial, Helvetica, sans-serif;
+            font: normal normal 20px/25px Poppins;
+            /* font-family: Arial, Helvetica, sans-serif; */
         }
        .create-account{
-        width: 182px;
+        width: 187px;
         height: 23px;
         text-align: left;
         letter-spacing: 0px;
@@ -194,7 +204,8 @@
         block-size: 40px;
         font-size: 18px;
         margin-left: 30px;
-        font-family: Arial, Helvetica, sans-serif;
+        font: normal normal 18px/25px Poppins;
+        /* font-family: Arial, Helvetica, sans-serif; */
        }
        .logo{
         width: 127px;
@@ -203,7 +214,7 @@
         border: 1px solid #707070;
         opacity: 1;
         margin-top: -9cm;
-        border-radius: 96%;
+        border-radius: 50%;
         backface-visibility: hidden;
         text-align: center;
         margin-left: 16cm;
@@ -214,10 +225,11 @@
         letter-spacing: 0px;
         color: #EB2929;
         opacity: 1;
-        margin-left: 25px;
+        margin-top: 2px;
+        margin-left: 34px;
         font-size: 90px;
         font: normal normal 600 70px/106px Poppins;
-        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: Arial, Helvetica, sans-serif; */
        }
        .bi-search{
         width: 17px;
@@ -226,6 +238,10 @@
         opacity: 0.97;
         margin-left: -9.2cm;
        }
+       @font-face {
+                font-family: Poppins;
+                src: url(./Poppins-Regular.ttf);
+            }
        
        
     </style>
@@ -233,7 +249,8 @@
 <body>
     <div class="root">
                 <div class="section-1">
-                     <img class="section-1-img" src="//E:/FSD_HTML/Assignments/Assignment-2/image1.png" alt="dining image">
+                     <!-- <img class="section-1-img" src="//E:/FSD_HTML/Assignments/Assignment-2/image1.png" alt="dining image"> -->
+                     <div class="section-1-img"></div>
                      <div class="logo">
                          <div class="logo-text">e!</div> 
                      </div>
