@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
          body{
             top: 0px;
@@ -55,6 +58,7 @@
                 margin-top: 40px;
                 display: inline-block;
                 font: normal normal 16px/25px Poppins;
+                text-shadow: 0px 0px 2px;
             }
         .create-account{
             top: 17px;
@@ -69,6 +73,7 @@
                 background-color: #CE0505;
                 display: inline-block;
                 font: normal normal 16px/25px Poppins;
+                text-shadow: 0px 0px 2px;
             }
             .heading{
             margin-top: 30px;
@@ -80,6 +85,7 @@
             letter-spacing: 0px;
             color: #192F60;
             opacity: 1;
+            text-shadow: 0px 0px 1px;
             }
             .section-1{
             top: 195px;
@@ -109,21 +115,20 @@
                 letter-spacing: 0px;
                 color: #192F60;
                 opacity: 1;
+                text-shadow: 0px 0px 1px;
             }
             .location{
                 top: 247px;
                 margin-left: -90px;
                 width: 106px;
                 height: 20px;
-                /* margin-right: 140px;
-                margin-left: 30px; */
                 text-align: left;
                 vertical-align: top;
                 font: normal normal normal 14px/21px Poppins;
                 letter-spacing: 0px;
                 color: #192F60;
                 opacity: 1;
-                font-weight: 600;
+                text-shadow: 0px 0px 1px;
                 
             }
             .selected-location{
@@ -140,16 +145,18 @@
                 opacity: 1;
                 color: #8C96AB;
                 font: normal normal normal 14px/21px Poppins;
+                text-shadow: 0px 0px 1px;
             }
             .cuisine{
                 margin-right: 30px;
                 margin-left: 30px;
                 text-align: left;
-                margin-top: -300px;
+                margin-top: -284px;
                 font: normal normal normal 14px/21px Poppins;
                 letter-spacing: 0px;
                 color: #192F60;
                 opacity: 1;
+                text-shadow: 0px 0px 1px;
             }
             .checkbox{
                 width: 18px;
@@ -187,7 +194,6 @@
 
                 width: 794px;
                 height: 300px;
-                /* margin-left: 400px; */
                 margin-top: 55px; 
                 text-align: left;
                 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -201,11 +207,12 @@
                 margin-right: 30px;
                 margin-left: 30px;
                 text-align: left;
-                /* margin-top: -300px; */
                 font: normal normal normal 14px/21px Poppins;
                 letter-spacing: 0px;
                 color: #192F60;
                 opacity: 1;
+                text-shadow: 0px 0px 1px;
+                margin-top: 24px;
             }
             .cost-radiobutton{
                 left: 140px;
@@ -227,15 +234,16 @@
             }
             .sort{
                 margin-right: 30px;
-                margin-left: 10px;
+                margin-left: 7px;
                 text-align: left;
                 font: normal normal normal 14px/21px Poppins;
                 letter-spacing: 0px;
                 color: #192F60;
                 opacity: 1;
+                text-shadow: 0px 0px 1px;
+                margin-top: 24px;
             }
             .sort-radiobutton{
-                /* left: 140px; */
                 margin-left: -5px;
                 width: 18px;
                 height: 18px;
@@ -283,6 +291,7 @@
                 opacity: 1;
                 margin-left: -20px;
                 margin-top: -120px;
+                text-shadow: 0px 0px 1px;
             }
             .shop-1-heading-2{
                 width: 40px;
@@ -294,6 +303,7 @@
                 opacity: 1;
                 margin-top: -20px;
                 margin-left: -18px;
+                text-shadow: 0px 0px 1px;
             }
             .shop-1-heading-3{
                 width: 370px;
@@ -305,6 +315,7 @@
                opacity: 1;
                margin-top: -20px;
                margin-left: -18px;
+               text-shadow: 0px 0px 1px;
             }
             .image1{
                 width: 120px;
@@ -321,12 +332,13 @@
               letter-spacing: 0px;
               color: #636F88;
               opacity: 1;
+              text-shadow: 0px 0px 1px;
             }
             .cost-1-details-1{
-                /* width:80px; */
                 height: 5px;
                 margin-left: 50px;
                 font: normal normal normal 16px/30px Poppins;
+                text-shadow: 0px 0px 1px;
             }
             .cost-1-price-detail{
                 width: 21px;
@@ -361,10 +373,10 @@
                 background-color: #8C96AB;
                 color: #FFFFFF;
             }
-            @font-face {
+            /* @font-face {
                 font-family: Poppins;
-                src: url(./Poppins-Regular.ttf);
-            }
+                src: url("./Poppins-Regular.ttf");
+            } */
 
     </style>
 </head>
@@ -399,8 +411,8 @@
                             </div>
                             <br>
                    <div class="cuisine">
-                        <h4>Cuisine</h4>
-                        <div>
+                        <label>Cuisine</label>
+                        <div style="margin-top: 8px;">
                             <input class="checkbox" type="checkbox" id="north indian" name="cuisine">
                             <label class="checkbox-text" for="north indian">North Indian</label> 
                         </div>
@@ -423,8 +435,8 @@
                 </div>
             </div>
             <div class="cost">
-                    <h4>Cost For Two</h4>
-                    <div>
+                    <label>Cost For Two</label>
+                    <div style="margin-top: 8px;">
                          <input class="cost-radiobutton" type="radio" id="price-margin-1" name="cost">
                         <label class="radiobutton-text" for="price-margin-1">Less than ` 500</label> 
                     </div>
@@ -445,12 +457,12 @@
                         <label class="radiobutton-text" for="price-margin-5">` 2000+</label>
                     </div>
       <div class="sort">
-        <h4>Sort</h4>
-        <div>
+        <label>Sort</label>
+        <div style="margin-top: 8px; margin-left: 7px;">
           <input class="sort-radiobutton" type="radio" id="price-low-to-high" name="sort">
           <label class="sort-radiobutton-text" for="price-low-to-high">Price low to high</label> 
       </div>
-      <div>
+      <div style="margin-left: 7px;">
           <input class="sort-radiobutton" type="radio" id="price-high-to-low" name="sort">
           <label class="sort-radiobutton-text" for="price-high-to-low">Price high to low</label>
       </div>
@@ -463,7 +475,7 @@
         <div class="section-2" style="display: inline-block;">
                    <div class="shop-details-1">
                     <a href="">
-                        <img class="image1" src="E:\FSD_HTML\Assignments\Assignment-1\image1.png" alt="food image">
+                        <img class="image1" src="https://c.ndtvimg.com/2023-03/oos87lkg_idli_625x300_14_March_23.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" alt="food image">
                     </a>
                     
                     <h3 class="shop-1-heading-1">The Big Chill Cakery</h3>
@@ -487,7 +499,7 @@
         <div class="section-3" style="display: inline-block;">
             <div class="shop-details-1">
                 <a href="">
-                    <img class="image1" src="E:\FSD_HTML\Assignments\Assignment-1\image2.png" alt="food image">
+                    <img class="image1" src="https://c.ndtvimg.com/2023-03/oos87lkg_idli_625x300_14_March_23.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" alt="food image">
                 </a>
                 <h3 class="shop-1-heading-1">The Bake Shop</h3>
                 <h4 class="shop-1-heading-2">FORT</h4>
