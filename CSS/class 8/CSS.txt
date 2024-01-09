@@ -36,7 +36,9 @@ CSS Visibility :
                display : none
                visibility : hidden
 
-Google Fonts
+Google Fonts : 2 ways to use Google Fonts
+                 - through link tag
+                 - through style tag by downloading the file.
 
 Display :
       - Block Level
