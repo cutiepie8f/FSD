@@ -16,3 +16,11 @@ Background Images
         - Box
 
     Position:
+         - Normal
+         - Static
+         - Fixed
+         - Sticky
+         - Relative
+         - Absolute
+
+    
