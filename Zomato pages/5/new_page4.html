@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        #root{
+            width: 1366px;
+            height: 900px;
+            background: #FBFBFB 0% 0% no-repeat padding-box;
+            opacity: 1;
+            border: #FBFBFB;
+            border-style:solid;
+            margin: auto;
+            box-shadow: 0px 3px 6px #00000029;
+        }
+        #header{
+              height: 50px;
+              background-color: #CE0505;
+              padding: 12px;
+        }
+        #logo{
+            width: 52px;
+            height: 52px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+            border-radius: 50%;
+            font: normal normal 600 33px/50px Poppins;
+            letter-spacing: 0px;
+            color: #EB2929;
+            opacity: 1;
+            text-align: center;
+            display: inline block;
+            position: absolute;
+        }
+        #login{
+            display: inline block;
+            position: absolute;
+            margin-left: 912px;
+            padding: 12px;
+        }
+        #login_button{
+            text-align: left;
+            font: normal normal 18px/25px Poppins;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            background-color:#CE0505;
+            border: #CE0505;
+            text-shadow: 0px 0px 1px;
+        }
+        #create_account{
+             margin-left: 1000px;
+             padding: 2px;
+        }
+        #create_account_button{
+            width: 181px;
+            height: 43px;
+            text-align: center;
+            font: normal normal 17px/25px Poppins;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            border: 1px solid #FFFFFF;
+            border-radius: 3px;
+            background-color: #CE0505;
+            text-shadow: 0px 0px 1px;
+        }
+        #main_heading{
+            font: normal normal bold 20px/55px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            text-shadow: 0px 0px 1px;
+        }
+        #filter_block
+        {
+            width: 260px;
+            height: 682px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            opacity: 1;
+            position: absolute;
+            display: inline block;
+        }
+        #filter{
+            text-align: left;
+            font: normal normal 600 16px/27px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            text-shadow: 0px 0px 1px;
+            margin-left: 26px;
+            margin-top: 17px;
+        }
+        #select_location_text{
+            text-align: left;
+            font: normal normal normal 14px/21px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            margin-left: 26px;
+            text-shadow: 0px 0px 1px;
+        }
+        #location{
+            border: 1px solid #8C96AB;
+            border-radius: 3px;
+            opacity: 1;
+            background-color: #FFFFFF;
+            width: 179px;
+            height: 30px;
+            margin-left: 26px;
+            margin-top: 10px;
+            color: #8C96AB;
+            text-shadow: 0px 0px 1px;
+        }
+        #cuisine-text{
+            text-align: left;
+           font: normal normal normal 14px/21px Poppins;
+           letter-spacing: 0px;
+           color: #192F60;
+           opacity: 1;
+           text-shadow: 0px 0px 1px;
+           margin-top: 26px;
+           margin-left: 26px;
+        }
+        #cuisine-checkbox{
+            width: 18px;
+            height: 18px;
+            border: 2px solid #3A5075;
+            border-radius: 2px;
+            opacity: 1;
+        }
+        .checkbox{
+                width: 18px;
+                margin-left: 3px;
+                text-align: left;
+                height: 18px;
+                border: 2px solid #3A5075;
+                border-radius: 2px;
+                opacity: 1;
+            }
+            .checkbox-text{
+                width: 86px;
+                height: 20px;
+                text-align: left;
+                font: normal normal normal 14px/21px Poppins;
+                letter-spacing: 0px;
+                color: #8C96AB;
+                opacity: 1;
+                padding-inline: 10px;
+            }
+            .cost{
+                margin-left: 26px;
+                text-align: left;
+                font: normal normal normal 14px/21px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+                text-shadow: 0px 0px 1px;
+                margin-top: 24px;
+            }
+            .cost-radiobutton{
+                left: 140px;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #3A5075;
+                border-radius: 9px;
+                opacity: 1;
+
+            }
+            .radiobutton-text{
+                width: 86px;
+                height: 20px;
+                text-align: left;
+                letter-spacing: 0px;
+                color: #8C96AB;
+                 opacity: 1;
+                 padding-inline: 10px;
+                 text-shadow: 0px 0px 1px;
+            }
+            .sort{
+                text-align: left;
+                font: normal normal normal 14px/21px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+                text-shadow: 0px 0px 1px;
+                margin-top: 24px;
+            }
+            .sort-radiobutton{
+                margin-left: -5px;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #3A5075;
+                border-radius: 9px;
+                opacity: 1;
+            }
+            .sort-radiobutton-text
+            {
+                width: 86px;
+                height: 20px;
+                text-align: left;
+                letter-spacing: 0px;
+                color: #8C96AB;
+                 opacity: 1;
+                 padding-inline: 10px;
+            }
+            #block-2{
+                width: 794px;
+                height: 291px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                opacity: 1;
+                margin-left: 290px;
+                margin-top: -608px;
+                position: absolute;
+                
+             }
+             #text{
+                font: normal normal 600 26px/46px Poppins;
+                letter-spacing: 0px;
+                color: #192F60;
+                opacity: 1;
+                margin-left: 242px;
+                margin-top: 108px;
+                text-shadow: 0px 0px 1px;
+             }
+            
+    </style>
+</head>
+<body>
+    <div id="root">
+              
+             <!--header-->
+             <div id="header">
+                     <div style="margin-left: 112px;">
+                        <!--logo-->
+                         <div id="logo">e!</div>
+                         <!--done-->
+                         
+                         <!--login and create account button-->
+                         <div id="login">
+                            <button id="login_button">Login</button>
+                        </div>
+                        <div id="create_account">
+                            <button id="create_account_button">Create an account</button>
+                        </div>
+                        <!--done-->
+                    </div>
+             </div>
+             <!--done-->
+              
+             <div style="margin: auto; width: 1100px;">
+                        <!--Breakfast heading-->
+                        <div id="main_heading">
+                        <h2>Breakfast Places in Mumbai</h2>
+                        </div>
+                        <!--done-->
+
+                        <!--block-1-->
+                           <div id="filter_block">
+                                <!--filter-->
+                                <div id="filter"><h3>Filters</h3></div>
+                                <!--done-->
+                                <!--select location-->
+                               <div id="select_location_text"><label for="location">Select Location</label></div>
+                                  <div>
+                                      <select id="location">
+                                      <option selected disabled>Select Location</option>
+                                      <option>Bangalore</option>
+                                      <option>Gujarat</option>
+                                      <option>Bhopal</option>
+                                      <option>Delhi</option>
+                                     </select>
+                                   </div>
+                            <!--select location done-->
+                            
+                            <!--cuisine-->
+                            <div id="cuisine-text">
+                                <label>Cuisine</label>
+                                <div style="margin-top: 8px;">
+                                    <input class="checkbox" type="checkbox" id="north indian" name="cuisine">
+                                    <label class="checkbox-text" for="north indian">North Indian</label> 
+                                </div>
+                                <div>
+                                     <input class="checkbox" type="checkbox" id="south indian" name="cuisine">
+                                    <label class="checkbox-text" for="south indian">South Indian</label>
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="chineese" name="cuisine">
+                                    <label class="checkbox-text" for="chineese">Chinese</label>
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="fast food" name="cuisine">
+                                    <label class="checkbox-text" for="fast food">Fast Food</label> 
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="street food" name="cuisine">
+                                    <label class="checkbox-text" for="street food">Street Food</label>
+                                </div>
+                        </div>
+                    
+                    <!--cuisine done-->
+                    
+                    <!--cost-->
+                    <div class="cost">
+                        <label>Cost For Two</label>
+                        <div style="margin-top: 8px;">
+                             <input class="cost-radiobutton" type="radio" id="price-margin-1" name="cost">
+                            <label class="radiobutton-text" for="price-margin-1">Less than ` 500</label> 
+                        </div>
+                        <div>
+                            <input class="cost-radiobutton" type="radio" id="price-margin-2" name="cost">
+                            <label class="radiobutton-text" for="price-margin-2">` 500 to ` 1000</label>
+                        </div>
+                        <div>
+                            <input class="cost-radiobutton" type="radio" id="price-margin-3" name="cost">
+                            <label class="radiobutton-text" for="price-margin-3">` 1000 to ` 1500</label>
+                        </div>
+                        <div>
+                           <input class="cost-radiobutton" type="radio" id="price-margin-4" name="cost">
+                           <label class="radiobutton-text" for="price-margin-4">` 1500 to ` 2000</label> 
+                        </div>
+                        <div>
+                            <input class="cost-radiobutton" type="radio" id="price-margin-5" name="cost">
+                            <label class="radiobutton-text" for="price-margin-5">` 2000+</label>
+                        </div>
+                        <!--cost done-->
+                          
+                        <!--sort-->
+                        <div class="sort">
+                            <label>Sort</label>
+                            <div style="margin-top: 8px; margin-left: 7px;">
+                              <input class="sort-radiobutton" type="radio" id="price-low-to-high" name="sort">
+                              <label class="sort-radiobutton-text" for="price-low-to-high">Price low to high</label> 
+                          </div>
+                          <div style="margin-left: 7px;">
+                              <input class="sort-radiobutton" type="radio" id="price-high-to-low" name="sort">
+                              <label class="sort-radiobutton-text" for="price-high-to-low">Price high to low</label>
+                          </div>
+                       </div>
+                    </div>
+                <!--block-1 end-->
+
+                <!--block-2-->
+                <div id="block-2">
+                     <h2 id="text">Sorry. No result found</h2>
+                </div>
+
+
+            
+            
+            
+            
+            
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

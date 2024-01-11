@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        #root{
+            width: 1200px;
+            height: 1085px;
+            display: block;
+            border: 1px solid #FBFBFB;
+            background: #FBFBFB 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            margin: auto;
+            
+        }
+        #header{
+            width: 1200px;
+            height: 80px;
+            background: #CE0505 0% 0% no-repeat padding-box;;
+        }
+        #logo{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 3px; 
+            display: inline block;
+        }
+        #logo_name{
+            padding: 10px; 
+            font: normal normal 600 33px/50px Poppins;
+            color: #EB2929;
+            text-shadow: 0px 0px 1px;
+        }
+        #login{
+            width: 43px;
+            height: 23px;
+            display: inline block;
+            position: absolute;
+            padding-left: 19cm;
+            margin-top: -1cm;
+        }
+        #login_text{
+            background-color: #CE0505;
+            text-align: left;
+           font: normal normal 21px/25px Poppins;
+           letter-spacing: 0px;
+           color: #FFFFFF;
+           border: #CE0505;
+           text-shadow: 0px 0px 1px;
+        }
+        #create_account{
+            width: 203px;
+            height: 46px;
+            border: 1px solid #FFFFFF;
+            border-radius: 3px;
+            margin-left: 21cm;
+            position: absolute;
+            margin-top: -50px;
+        }
+        #create_account-text{
+           text-align: left;
+           font: normal normal 20px/25px Poppins;
+           letter-spacing: 0px;
+           color: #FFFFFF;
+           background-color: #CE0505;
+           border: #CE0505;
+           margin-top: 10px;
+           text-shadow: 0px 0px 1px;
+
+        }
+        #background_image{
+            background-image: url(./bg_image.png);
+            background-repeat: no-repeat;
+            width: 961px;
+            height: 409px;
+            margin: auto;
+            position: relative;
+            margin-top: 42px;
+            box-shadow: 0px 3px 6px #00000029;
+
+        }
+        #image_gallery_button
+        {
+            width: 242px;
+           height: 48px;
+           background: #FFFFFF 0% 0% no-repeat padding-box;
+           border-radius: 3px;
+           opacity: 0.8;
+           position: absolute;
+           margin-top: 329px;
+           margin-left: 696px 
+        }
+        #image_gallery_text{
+            text-align: left;
+           font: normal normal 600 16px/30px Poppins;
+           letter-spacing: 0px;
+           color: #192F60;
+           opacity: 1;
+           background-color: #FFFFFF;
+           border: #FFFFFF;
+           margin: 9px;
+           text-shadow: 0px 0px 1px;
+        }
+        #restaurant-name{
+            width: 339px;
+            height: 43px;
+            position: relative;
+            margin-top: 40px;
+            margin-left: 116px;
+            text-align: left;
+            font: normal normal 600 23px/46px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            text-shadow: 0px 0px 1px;
+        }
+        #place_order{
+            width: 223px;
+            height: 50px;
+            background: #CE0505 0% 0% no-repeat padding-box;
+            border-radius: 6px;
+            opacity: 1;
+            position: relative;
+            margin-top: 45px;
+            margin-left: 860px;
+            
+        }
+        #place_order_button{
+            padding: 11px;
+            margin-left: 8px;
+            text-align: center;
+            font: normal normal 20px/27px Poppins;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            background-color: #CE0505;
+            border: #CE0505;
+            text-shadow: 0px 0px 1px;
+        }
+        #overview{
+            width: 85px;
+            height: 25px;
+            position: relative;
+            margin-left: 137px;
+            margin-top: 59px;
+            display: inline block;
+        }
+        #button{
+            text-align: left;
+            font: normal normal 600 23px/27px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            background-color: #FBFBFB;
+            border: #FBFBFB;
+            text-shadow: 0px 0px 1px;
+            position: relative;
+        }
+        #contact{
+             margin-left: 299px;
+             margin-top: -26px;
+        }
+        #line{
+            border: 2px solid #DEDFE5;
+            width: 961px;
+            margin-top: 8px;
+            position: relative;
+        }
+        #text_header{
+            margin-top: 50px;
+            margin-left: 116px;
+            /* position: relative; */
+            text-align: left;
+            font: normal normal 600 19px/33px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            text-shadow: 0px 0px 1px;
+        }
+        #main_text{
+            width: 545px;
+            height: 25px;
+            margin-top: -24px;
+        }
+        #text-1{
+            text-align: left;
+            font: normal normal 600 22px/27px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            margin-top: 70px;
+            margin-left: 116px;
+            opacity: 1;
+            /* text-shadow: 0px 0px 1px; */
+        }
+        #text-2{
+            text-align: left;
+           font: normal normal normal 19px/30px Poppins;
+           letter-spacing: 0px;
+           color: #192F60;
+           opacity: 1;
+           text-shadow: 0px 0px 1px;
+           margin-left: 116px;
+           position: relative;
+           margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+            <div id="header">
+                <!--header part-->
+                <div style="padding: 12px;
+                            margin-left: 89px;">
+                    <div id="logo">
+                        <label id="logo_name">e!</label>
+                    </div>
+                    <div id="login">
+                        <button id="login_text">Login</button>
+                    </div>
+                    <div id="create_account">
+                        <button id="create_account-text">Create an account</button>
+                    </div>
+                </div>
+            </div>
+            <!--header part complete-->
+
+            <!--background image-->
+            <div id="background_image">
+                    <div id="image_gallery_button">
+                        <button id="image_gallery_text">Click to see Image Gallery</button>
+                    </div>
+            </div>
+            <!--background image done-->
+            
+            <!--restraunt name heading-->
+            <div id="restaurant-name">
+                <h2>The Big Chill Cakery</h2>
+            </div>
+            <!--done-->
+
+            <!--Place order button-->
+            <div id="place_order">
+                <button id="place_order_button">Place Online Order</button>
+            </div>
+            <!--end-->
+
+            <!--button header-->
+            <div style="margin-top: -70px;">
+                  <div id="overview">
+                       <button id="button">Overview</button>
+                  </div>
+                  <div id="contact">
+                    <button id="button">Contact</button>
+                  </div>
+            </div>
+            <!--done-->
+            <hr id="line">
+
+            <!--inside text-1-->
+            <div id="main_text">
+                <h2 id="text-1">Phone Number</h2>
+                <h3 id="text-2" style="color: #F67082;">+91 114004566</h3>
+            </div>
+            <!--done-->
+              <br><br>
+            <!--inside text-2-->
+            <div id="main_text">
+                <h2 id="text-1" style="text-shadow: 0px 0px 1px;">The Big Chill Cakery</h2>
+                <h3 id="text-2">Shop 1, Plot D, Samruddhi Complex, Chincholi, Mumbai-400002, Maharashtra</h3>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
