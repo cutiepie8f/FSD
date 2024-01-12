@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
         #root{
-            width: 1200px;
+            width: 1506px;;
             height: 1085px;
             display: block;
             border: 1px solid #FBFBFB;
@@ -18,8 +18,10 @@
             margin: auto;
             
         }
+        *{
+            text-shadow: 0px 0px 1px;
+        }
         #header{
-            width: 1200px;
             height: 80px;
             background: #CE0505 0% 0% no-repeat padding-box;;
         }
@@ -30,28 +32,25 @@
             border-radius: 50%;
             padding: 3px; 
             display: inline block;
+            margin-left: 11px;
         }
         #logo_name{
             padding: 10px; 
             font: normal normal 600 33px/50px Poppins;
             color: #EB2929;
-            text-shadow: 0px 0px 1px;
         }
         #login{
             width: 43px;
             height: 23px;
             display: inline block;
             position: absolute;
-            padding-left: 19cm;
-            margin-top: -1cm;
+            padding-left: 805px;
+            margin-top: -55px;
         }
         #login_text{
-            background-color: #CE0505;
-            text-align: left;
            font: normal normal 21px/25px Poppins;
            letter-spacing: 0px;
            color: #FFFFFF;
-           border: #CE0505;
            text-shadow: 0px 0px 1px;
         }
         #create_account{
@@ -59,13 +58,13 @@
             height: 46px;
             border: 1px solid #FFFFFF;
             border-radius: 3px;
-            margin-left: 21cm;
+            margin-left: 30cm;
             position: absolute;
-            margin-top: -50px;
+            margin-top: -62px;
+            text-align: center;
         }
         #create_account-text{
-           text-align: left;
-           font: normal normal 20px/25px Poppins;
+           font: normal normal 18px/25px Poppins;
            letter-spacing: 0px;
            color: #FFFFFF;
            background-color: #CE0505;
@@ -81,7 +80,7 @@
             height: 409px;
             margin: auto;
             position: relative;
-            margin-top: 42px;
+            margin-top: -25cm;
             box-shadow: 0px 3px 6px #00000029;
 
         }
@@ -105,20 +104,17 @@
            background-color: #FFFFFF;
            border: #FFFFFF;
            margin: 9px;
-           text-shadow: 0px 0px 1px;
         }
         #restaurant-name{
             width: 339px;
             height: 43px;
             position: relative;
-            margin-top: 40px;
-            margin-left: 116px;
             text-align: left;
-            font: normal normal 600 23px/46px Poppins;
+            font: normal normal 600 22px/46px Poppins;
             letter-spacing: 0px;
             color: #192F60;
             opacity: 1;
-            text-shadow: 0px 0px 1px;
+            margin-top: 40px;
         }
         #place_order{
             width: 223px;
@@ -128,20 +124,19 @@
             opacity: 1;
             position: relative;
             margin-top: 45px;
-            margin-left: 860px;
+            margin-left: 734px;
             
         }
         #place_order_button{
             padding: 11px;
             margin-left: 8px;
             text-align: center;
-            font: normal normal 20px/27px Poppins;
+            font: normal normal 19px/27px Poppins;
             letter-spacing: 0px;
             color: #FFFFFF;
             opacity: 1;
             background-color: #CE0505;
             border: #CE0505;
-            text-shadow: 0px 0px 1px;
         }
         #overview{
             width: 85px;
@@ -153,7 +148,7 @@
         }
         #button{
             text-align: left;
-            font: normal normal 600 23px/27px Poppins;
+            font: normal normal 600 18px/27px Poppins;
             letter-spacing: 0px;
             color: #192F60;
             opacity: 1;
@@ -168,46 +163,44 @@
         }
         #line{
             border: 2px solid #DEDFE5;
-            width: 961px;
+            width: 962px;
             margin-top: 8px;
             position: relative;
         }
         #text_header{
             margin-top: 50px;
-            margin-left: 116px;
-            /* position: relative; */
+            margin-left: 0px;
+            position: relative;
             text-align: left;
             font: normal normal 600 19px/33px Poppins;
             letter-spacing: 0px;
             color: #192F60;
             opacity: 1;
-            text-shadow: 0px 0px 1px;
         }
         #main_text{
-            width: 545px;
+            width: 508px;
             height: 25px;
             margin-top: -24px;
         }
         #text-1{
             text-align: left;
-            font: normal normal 600 22px/27px Poppins;
+            font: normal normal 20px/27px Poppins;
             letter-spacing: 0px;
             color: #192F60;
             margin-top: 70px;
-            margin-left: 116px;
             opacity: 1;
-            /* text-shadow: 0px 0px 1px; */
+            text-shadow: 0px 0px 1px;
         }
         #text-2{
             text-align: left;
-           font: normal normal normal 19px/30px Poppins;
+           font: normal normal normal 18px/30px Poppins;
            letter-spacing: 0px;
            color: #192F60;
            opacity: 1;
            text-shadow: 0px 0px 1px;
-           margin-left: 116px;
            position: relative;
            margin-top: -10px;
+           position: relative;
         }
     </style>
 </head>
@@ -215,13 +208,15 @@
     <div id="root">
             <div id="header">
                 <!--header part-->
-                <div style="padding: 12px;
-                            margin-left: 89px;">
+                <div style="padding: 12px; margin: auto; width: 1000px;">
                     <div id="logo">
                         <label id="logo_name">e!</label>
                     </div>
-                    <div id="login">
-                        <button id="login_text">Login</button>
+                    <a href="">
+                        <div id="login">
+                            <h2 id="login_text">Login</h2>
+                        </div>
+                    </a>
                     </div>
                     <div id="create_account">
                         <button id="create_account-text">Create an account</button>
@@ -229,13 +224,13 @@
                 </div>
             </div>
             <!--header part complete-->
-
+        <div style="width: 961px; margin: auto;">     
             <!--background image-->
-            <div id="background_image">
+              <div id="background_image">
                     <div id="image_gallery_button">
                         <button id="image_gallery_text">Click to see Image Gallery</button>
                     </div>
-            </div>
+              </div>
             <!--background image done-->
             
             <!--restraunt name heading-->
@@ -251,7 +246,7 @@
             <!--end-->
 
             <!--button header-->
-            <div style="margin-top: -70px;">
+            <div style="margin-top: -59px; margin-left: -140px;">
                   <div id="overview">
                        <button id="button">Overview</button>
                   </div>
@@ -271,10 +266,12 @@
               <br><br>
             <!--inside text-2-->
             <div id="main_text">
-                <h2 id="text-1" style="text-shadow: 0px 0px 1px;">The Big Chill Cakery</h2>
-                <h3 id="text-2">Shop 1, Plot D, Samruddhi Complex, Chincholi, Mumbai-400002, Maharashtra</h3>
+                <h2 id="text-1" style="font-weight: 600;">The Big Chill Cakery</h2>
+                <h3 id="text-2" style="color: #636F88;">Shop 1, Plot D, Samruddhi Complex, Chincholi, Mumbai-400002, Maharashtra</h3>
             </div>
             <!--done-->
-        </div>
+        <div>  
+            <!--done--> 
+    </div>  
 </body>
 </html>
