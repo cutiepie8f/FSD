@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Z-index </title>
+
+        <style>
+            div {
+                height: 50px;
+                width: 50px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: lightcoral; z-index: 1; top: 16px; left: 46px;">
+            Div - 01
+        </div> 
+        
+        <div style="background-color: lightgreen; left: 29px; top: 30px;">
+            Div - 02
+        </div> 
+
+        <div style="background-color: lightslategray; z-index: -1">
+            Div - 03
+        </div> 
+    </body>
+</html>

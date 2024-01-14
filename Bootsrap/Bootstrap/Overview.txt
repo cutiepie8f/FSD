@@ -1,0 +1,20 @@
+Bootstrap
+
+    - Link : https://getbootstrap.com/
+    - Latest Version (13/01/2024): v5.3
+    - Free front-end framework of CSS.
+    - CSS framework.
+    - It includes HTMl, CSS, Js based responsive desighn templates and icons.
+
+    Connect Bootstrap:
+        - CDN  (Content Delivery Network)
+            - Through JsDelivr Links
+
+        - Download the files
+
+    - No attribute's name can be defined by the devloper fro Bootstrap.
+    - You need to use the same class name and refferences used by bootstrap.
+    - Never use the bootstrap refferences and attributes for CSS declaration.
+
+    - Carousel
+    - Grids
