@@ -85,16 +85,6 @@
            color: #636F88;
           margin-left: 136px;
         }
-        .selected-restraunt{
-            width: 426px;
-            height: 50px;
-            font: normal normal normal 15px/35px Poppins;
-            letter-spacing: 0px;
-            color: #636F88;
-            opacity: 1;
-            margin-left: 50px;
-            padding-left:56px;
-        }
         .bi-search{
         width: 17px;
         height: 17px;
@@ -102,6 +92,133 @@
         opacity: 0.97;
         margin-left: -410px;
         }
+        .heading-1{
+            font: normal normal bold 30px/46px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            margin-top: 38px;
+            position: relative;
+        }
+        .heading-2{
+            font: normal normal normal 18px/27px Poppins;
+            letter-spacing: 0px;
+            color: #8C96AB;
+            opacity: 1;
+        }
+        *{
+            text-shadow: 0px 0px 1px;
+        }
+        .food_block-1{
+            width: 360px;
+            height: 160px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            opacity: 1;
+            display: inline-block;
+            margin-left: 57px;
+            margin-top: 17px;
+           
+        }
+        .food_image{
+            width: 160px;
+            height: 160px;
+            opacity: 1;
+        }
+        .block_text{
+            font: normal normal 600 18px/27px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+            margin-left: 200px;
+            margin-top: -140px;
+        }
+        .block_text-2{
+            font: normal normal normal 14px/21px Poppins;
+            letter-spacing: 0px;
+            color: #8C96AB;
+            opacity: 1;
+            margin-left: 200px;
+        }
+        .food_block-2{
+            width: 360px;
+            height: 160px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            opacity: 1;
+            display: inline-block;
+            margin-left: 88px;
+            margin-top: 17px;
+            position: absolute;
+            
+        }
+        .food_block-3{
+            width: 360px;
+            height: 160px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            opacity: 1;
+            display: inline-block;
+            margin-left: 533px;
+            margin-top: 17px;
+            position: absolute;
+            
+        }
+        .selected-restraunt{
+            width: 426px;
+            height: 313px;
+            font: normal normal normal 15px/35px Poppins;
+            letter-spacing: 0px;
+            color: #636F88;
+            opacity: 1;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+        }
+        #restaurant-name{
+            text-align: left;
+            font: normal normal bold 18px/30px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            margin-left: 113px;
+            margin-top: -67px;
+          }
+        .location-name{
+            font: normal normal normal 15px/30px Poppins;
+            letter-spacing: 0px;
+            color: #636F88;
+            opacity: 1;
+            margin-left: 113px;
+            margin-top: -20px;
+            
+            
+        }
+        #image{
+            border-radius: 214%;
+            height: 75px;
+            width: 75px;
+        }
+        .restraunt-dropdown{
+            width: 426px;
+            height: 51px;
+            margin-left: 42px;
+            padding-left: -41px;
+            text-align: left;
+        }
+        #dropdown-text{
+            font: normal normal normal 15px/23px Poppins;
+            letter-spacing: 0px;
+            color: #636F88;
+            opacity: 1;
+            margin-left: 51px;
+            margin-top: 7px;
+        }
+        hr{
+         border: 1px solid #E9E9F2;
+         margin-top: 9px;
+         opacity: 1.75;
+        }
+
+
        @font-face {
         font-family: Poppins;
                 src: url("./Poppins-Regular.ttf");
@@ -128,8 +245,7 @@
                 </div>
                  <!--coloumn-1-->
            </div>
-            <!--navigation row-1 done-->
-            
+            <!--navigation row-1 done-->  
             <div class="row">
                   <div class="col-5"></div>
                   <div class="col-2">
@@ -160,21 +276,23 @@
                             <option>Bengaluru</option>
                                    
                           </select>
-                           
-                <select class="form-select form-select-sm selected-restraunt" style="display: inline-block;" aria-label="Small select example">
-                    <option selected disabled>Search for restaurants</option>
-                            <option class="restaurant-name">The Big Chill Cakery</option>
-                            <option class="location-name">Sarjapur Road, Bengaluru</option>
-                             <hr>
-                             
-                            <option class="restaurant-name">Punjabi Rasoi</option>
-                            <option class="location-name">Sarjapur Road, Bengaluru</option>
-                            <hr>
-
-                            <option class="restaurant-name">Punjabi Rasoi</option>
-                            <option class="location-name">Sarjapur Road, Bengaluru</option>
-                        
-                  </select>
+    
+                  <div class="dropdown" style="display: inline-block;">
+                    <a class="btn btn-secondary dropdown-toggle restraunt-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: #FFFFFF 0% 0% no-repeat padding-box; color: #636F88;">
+                        <h3 id="dropdown-text">Search for restaurants</h3>
+                    </a>
+                  
+                    <ul class="dropdown-menu selected-restraunt">
+                      <li><a class="dropdown-item" href="#"><img src="./image2.png" alt="food image" id="image"><h4 id="restaurant-name">The Big Chill Cakery</h4></a></li>
+                      <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+                      <hr>
+                      <li><a class="dropdown-item restaurant-name" href="#"><img src="./image2.png" alt="food image" id="image"><h4 id="restaurant-name">Punjabi Rasoi</h4></a></li>
+                      <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+                      <hr>
+                      <li><a class="dropdown-item restaurant-name" href="#"><img src="./image2.png" alt="food image" id="image"><h4 id="restaurant-name">Punjabi Rasoi</h4></a></li>
+                      <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+                    </ul>
+                  </div>
                 <i class="bi bi-search"></i> 
             
                     </div>
@@ -184,13 +302,76 @@
         </div>
        <!--background done-->
 
+       <!--quick search-->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                        <h2 class="heading-1">Quick Searches</h2>
+                        <h4 class="heading-2">Discover restaurants by type of meal</h4>
+                </div>
+            </div>
+        <!-- quick search done-->
+        
+        <!--food block row-1 start-->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="section-3" style="margin-left: -57px;">
+                    <div class="food_block-1">
+                               
+                               <img class="food_image" src="./image2.png" alt="food image">
+                                <h4 class="block_text">Breakfast</h4>
+                                <h5 class="block_text-2">Start your day with exclusive breakfast options</h5>
 
-
-
-
-
-
-
-     </div>
+                               
+                    </div>
+                    
+                    <div class="food_block-2">
+                               <img class="food_image" src="./image-3.png" alt="food image">
+                               <h4 class="block_text">Lunch</h4>
+                               <h5 class="block_text-2">Start your day with exclusive breakfast options</h5>
+                    </div>
+                    
+                    <div class="food_block-3">
+                        <img class="food_image" src="./image-4.png" alt="food image">
+                        <h4 class="block_text">Snacks</h4>
+                        <h5 class="block_text-2">Start your day with exclusive breakfast options</h5>
+     
+                    </div>
+                   
+            </div> 
+            </div>
+        </div>        
+        <!--done-->
+          
+        <!--food block row-2 start-->
+        <!--food block row-1 start-->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="section-4" style="margin-left: -57px; margin-top: 20px;">
+                        <div class="food_block-1">
+                            <img class="food_image" src="./image-6.png" alt="food image">
+                            <h4 class="block_text">Dinner</h4>
+                            <h5 class="block_text-2">Start your day with exclusive breakfast options</h5>
+             
+                        </div>
+                        <div class="food_block-2">
+                            <img class="food_image" src="./image-5.png" alt="food image">
+                            <h4 class="block_text">Drinks</h4>
+                            <h5 class="block_text-2">Start your day with exclusive breakfast options</h5>
+             
+                        </div>
+                        <div class="food_block-3">
+                            <img class="food_image" src="./image-7.png" alt="food image">
+                            <h4 class="block_text">Nightlife</h4>
+                            <h5 class="block_text-2">Start your day with exclusive breakfast options</h5>
+             
+                        </div>
+                </div>  
+            </div>
+        </div>      
+        <!--done-->
+    </div>
 </body>
 </html>

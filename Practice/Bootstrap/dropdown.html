@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootsrap CDN (CSS) -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+     <!-- Bootstrap CDN (Js) -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     
+     <style>
+        .selected-restraunt{
+            width: 426px;
+            height: 330px;
+            font: normal normal normal 15px/35px Poppins;
+            letter-spacing: 0px;
+            color: #636F88;
+            opacity: 1;
+            margin-left: 50px;
+            padding-left:56px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+        }
+        #restaurant-name{
+            text-align: left;
+            font: normal normal bold 18px/30px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            margin-left: 113px;
+            margin-top: -67px;
+          }
+        .location-name{
+            font: normal normal normal 15px/30px Poppins;
+            letter-spacing: 0px;
+            color: #636F88;
+            opacity: 1;
+            margin-left: 113px;
+            margin-top: -20px;
+            
+            
+        }
+        #image{
+            border-radius: 214%;
+            height: 75px;
+            width: 75px;
+        }
+     </style>
+</head>
+<body>
+    
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: #FFFFFF 0% 0% no-repeat padding-box; color: #636F88;">
+            Search for restaurants
+        </a>
+      
+        <ul class="dropdown-menu selected-restraunt">
+          <li><a class="dropdown-item" href="#"><img src="./image1.png" alt="food image" id="image"><h4 id="restaurant-name">The Big Chill Cakery</h4></a></li>
+          <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+          <hr>
+          <li><a class="dropdown-item restaurant-name" href="#"><img src="./image1.png" alt="food image" id="image"><h4 id="restaurant-name">Punjabi Rasoi</h4></a></li>
+          <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+          <hr>
+          <li><a class="dropdown-item restaurant-name" href="#"><img src="./image1.png" alt="food image" id="image"><h4 id="restaurant-name">Punjabi Rasoi</h4></a></li>
+          <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+        </ul>
+      </div>
+</body>
+</html>
+
+
+
+<!-- <select class="form-select form-select-sm selected-restraunt" style="display: inline-block;" aria-label="Small select example">
+    <option selected disabled>Search for restaurants</option>
+            <option class="restaurant-name">The Big Chill Cakery</option>
+            <option class="location-name">Sarjapur Road, Bengaluru</option>
+             <hr>
+             
+            <option class="restaurant-name">Punjabi Rasoi</option>
+            <option class="location-name">Sarjapur Road, Bengaluru</option>
+            <hr>
+
+            <option class="restaurant-name">Punjabi Rasoi</option>
+            <option class="location-name">Sarjapur Road, Bengaluru</option>
+        
+  </select> -->
