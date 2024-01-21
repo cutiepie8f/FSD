@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+<body>
+    <h2>This Keyword</h2>
+    <script>
+        var student1 = {
+                    roll: 25,
+                    name: "John",
+                    marks: 80,
+                    stud : function(){
+                        return this.roll+" "+this.name+" "+this.marks;
+                    }
+
+                }
+               var student2 = {
+                    roll: 15,
+                    name: "Joe",
+                    marks: 30,
+                    stud1 : function(){
+                        return this.roll+" "+this.name+" "+this.marks;
+                    }
+                }
+                document.write(student1.stud()+"<br>"+student2.stud1());
+    </script>
+</body>
+</html>

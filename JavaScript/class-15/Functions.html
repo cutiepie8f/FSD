@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script type="text/javascript" src="./external.js"></script>
+</head>
+<body>
+    <h2>Functions</h2>
+    <script>
+       // Functions
+       
+       document.write("Above the functions"+"<br>")
+       function abcd()
+          {
+            document.write("Inside the functions"+"<br>")
+            abcd1();
+          }
+       
+          function abcd1()
+          {
+            document.write("Inside the functions"+"<br><br>")
+            //abcd();
+          }
+          document.write("Below the function"+"<br>")
+          abcd();
+              
+          /*
+          Scope of functions:
+                     - Local : within the called function it represents.
+                     - Global : can be represented within the whole page of the js code.
+
+                              
+          */
+                    
+          var x2 = 20;
+          func();
+          function func()
+          {
+            var x1 = 10;
+            document.write("print x2 value : "+x2+"<br>");
+            document.write("print x1 value : "+x1+"<br>");
+          }
+          document.write("print x2 value : "+x2+"<br><br>");
+          document.write("print x1 value : "+x1+"<br>");
+         // func();
+          
+    </script>
+
+    <script>
+        /*
+        Parameter : A parameter accept values in the form of a static variables.
+        Arguments : An arguments through which we pass the values into the functions. 
+        */
+         var x = 20;
+         var y = 30;
+         var res = addition(x,y);  // x,y are the arguments.
+         document.write("sum is : "+res+"<br>")
+         function addition(a,b)       // a and b are the parameters.
+         {
+            var sum = a + b;
+             return sum;
+         }
+         
+    </script>
+</body>
+</html>
