@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <!--To insert js in html(internal js)-->
+    <script type="text/javascript">
+         document.write("Internal JS - Head Part"+"<br>")
+    </script>
+
+     <!--To insert js in html(External js)-->
+     <script type="text/javascript" src="./jsfile.js">
+        
+     </script>
+</head>
+<body>
+    <!--
+        insertion in html
+             > Internal Js(placed in the head/body)
+                 - <script> tag is used to put js code in it.
+                 - with an attribute to the script element of "type" as a key and 
+                    "text/javascript" as a value.
+
+            > External Js(Seperate file of js format)
+                - Link with the js file in the html element.
+                - with an attribute to the script element of "type" as a key and 
+                    "text/javascript" as a value.
+                - with an attribute to the script element of "src"(source) as a key and 
+                    the link to the external file will act as a value for it.
+
+    -->
+    <script type="text/javascript">
+        document.write("Internal JS - Body Part")
+   </script>
+</body>
+</html>

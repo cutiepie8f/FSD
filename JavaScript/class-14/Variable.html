@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataType</title>
+</head>
+<body>
+     <!--
+        Variable
+            - used for storing values in it.
+            - A variable can be a combination of alpha-numeric and symbols combined element.
+     -->
+     <h2>Variables</h2>
+     <script>
+        var a = 5;   // A variable is always declared with a var/ let/ const in js.
+        var b = 3;
+        var sum = a+b;
+        document.write(sum);
+     </script>
+     <!-- 
+        Array
+            - It is a structured way of storing the data in a sequential memory allocation.
+            - An array always starts from a memory allocation of "0".
+            - In array all your data needs to be of same variable type.
+     -->
+       <h2>Array</h2>
+            <script>
+                var Numbers = [10, 15, 20, 5, 1111];
+                var Country = ["India", "Sweden", "Jordan", "Australia"];
+                document.write(Numbers[7]+"<br>");
+                document.write(Numbers[4]+"<br>");
+                document.write(Numbers+"<br>");
+                document.write(Country+"<br>");
+                document.write(Country[2]+"<br>");
+                document.write(Numbers[7]+" "+Country[1]);
+            </script>
+
+            <!--
+                Objects
+                   - 2 sections
+                        > class : An logical entity. eg. - Pets, Animals, Trees, etc.
+                        > Object : An physical entity. eg. -cat, fish
+            -->
+            <h2>Object</h2>
+            <script>
+                //Record for 1 student(specific): OBJECT
+                student1 = {
+                    roll: 25,
+                    name: "John",
+                    marks: 80
+                }
+                student2 = {
+                    roll: 15,
+                    name: "Joe",
+                    marks: 30
+                }
+                document.write(
+                    "Student's Roll Number: "+student1.roll+"<br>"+
+                    "Student's Name: "+student2.name+"<br>"+
+                    "Student's Marks: "+student1.marks
+                    )
+            </script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+</head>
+<body>
+    <h2>Operators</h2>
+    <h3>Arithmetic Operators</h3>
+    <script>
+    /*
+
+        +  - Addition        10+20 = 30
+        -   - subtraction    20-10 = 10
+        *   - multiplication 20*10 = 200
+        /   - division       20/10 = 02
+        %  - modulus(mod)    20%09 = 02 (remainder)
+        ++  - increment      ++10  = 11
+        --   - decrement    --10   = 09
+           
+          PreOrder:
+           p = 10;
+           q = ++p;
+           
+           p  --> 11 ,q  --> 11
+           
+           postOrder: 
+                x = 10;
+                y = x++;
+
+                x = 11
+                y = 10
+    */
+
+        // Addition
+        var a = 10;
+        var b = 20;
+        document.write("addition : "+(a+b)+"<br>");
+
+        // Subtarction
+        var a = 10;
+        var b = 20;
+        document.write("subtraction : "+(b-a)+"<br>");
+        
+        // Multiplication
+        var a = 10;
+        var b = 20;
+        document.write("Multiplication : "+(a*b)+"<br>");
+
+         // Division
+        var a = 10;
+        var b = 20;
+        document.write("Division : "+(b/a)+"<br>");
+         
+        // Modulus
+        var a = 9;
+        var b = 20;
+        document.write("Modulus : "+(b%a)+"<br>");
+        
+        // Increment(post order)
+        var a = 10;
+        var b = a++;
+        document.write("Increment a = "+a+" "+"b = "+b+"<br>");
+         
+        // Increment(pre order)
+        var a = 10;
+        var b = ++a;
+        document.write("Increment a = "+a+" "+"b = "+b+"<br>");
+
+        // decrement(post order)
+        var a = 10;
+        var b = a--;
+        document.write("decrement a = "+a+" "+"b = "+b+"<br>");
+         
+        // decrement(pre order)
+        var a = 10;
+        var b = --a;
+        document.write("decrement a = "+a+" "+"b = "+b+"<br>");
+
+        var c = 10;
+        // c = c+2;
+        c += 2;
+        document.write("c = "+c+"<br>")
+
+   </script>
+
+   <h2>Comparison operator</h2>
+     <script>
+        /*
+        It always works in a boolean results.
+        > Greater than                           20>20  :  false
+        < Less than                              20<10  : false
+        >=  Greater than or equal to             20>=20 : true
+        <=  Less than or equal to                20<=20 : true
+        == equal to                              20==20 : true
+        != not equal to                           20!= 20: false
+
+        (Interview question)
+        difference between = , == and ===
+        = : is used for assigning values
+        == : to check if two values are same or not.
+        === : to check if two values are same and their datatype is same or not.
+
+        numeric values               ==             ===
+        10 - 10                       T              T
+        10 = "10"                     T              F
+        "10" - "10"                   T              T
+        "20" - "10"                   F              F
+        20  - 10                      F              F
+
+        */
+          // Greater than 
+        var a = 10;
+        var b = 20;
+        var res = a>b
+        document.write("Greater than : "+res+"<br>");
+
+         // Lesser than 
+         var a = 10;
+        var b = 20;
+        var res = a<b
+        document.write("Lesser than : "+res+"<br>");
+        
+         // Greater than or equal to 
+         var a = 10;
+        var b = 20;
+        var res = a>=b
+        document.write("Greater than or equal to: "+res+"<br>");
+
+        // Lesser than or equal to 
+        var a = 10;
+        var b = 20;
+        var res = a<=b
+        document.write("Lesser than or equal to: "+res+"<br>");
+
+        // not equal to
+        var a = 20;
+        var b = 20;
+        var res = (a!=b)
+        document.write("not Equal to : "+res+"<br>");
+
+        // Double equal to
+        var a = 20;
+        var b = 20;
+        var res = (a==b)
+        document.write("Double Equal to : "+res+"<br>");
+
+        // Double not equal to
+        var res = (a!==b)
+        document.write("Double not Equal to : "+res+"<br>");
+
+        //Tripple equal to
+        var res = (a===b)
+        document.write("Tripple Equal to : "+res+"<br>");
+
+</script>
+</body>
+</html>

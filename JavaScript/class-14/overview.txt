@@ -1,0 +1,29 @@
+JavaScript (Module-04)
+ 
+ JS (JavaScript)
+          - It is considered to be a part of frontend.
+          - It is a lighter programming language for object oriented programming(OOP).
+          - Browser's own language.
+
+2 Ways to insert JS in HTML:
+                 - 1. Internal JS
+                 - 2. Extrenal JS
+
+DataTypes in JS:
+         > Numbers: Numeric/Integer values.
+         > Boolean: True or False.
+         > Null: Not a value at all.
+         > undefined: value is not defined.
+         > String: sequence of characters(denoted with double quotes).
+         > Object: An instance through which a member can be accessed.
+
+JS Features:
+        - Variables
+        - Array
+        - Class and Objects
+
+Js Operators:
+        > Arthmetic Operators
+        > Comparision Operators
+        > Logical Operators
+               
