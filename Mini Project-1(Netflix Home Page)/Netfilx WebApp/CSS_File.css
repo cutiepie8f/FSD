@@ -26,8 +26,8 @@
     border-radius: 8px;
 }
 .signin{
-    background-color: rgb(231 14 14);
-    color: white;
+    background-color: rgb(231 14 14) !important;
+    color: white !important;
     margin-left: 28cm;
     position: absolute;
     margin-top: -45px;
@@ -36,9 +36,10 @@
 }
 #main-text{
     color: white;
-    font-size: 55px;
-    margin-top: 78px;
+    font-size: 53px;
+    margin-top: 220px;
     text-shadow: 1px 0px 2px;
+    font-weight: 700;
 }
 #sub-text-1{
     color: white;
@@ -52,22 +53,23 @@
     margin-left: 161px;
     padding-top: 15px;
 }
-.email{
+.email-1{
     font-size: 23px;
     width: 441px;
     margin-top: 15px;
     margin-left: 37px;
     color: white;
     padding-top: 7px;
-
+    background-image: linear-gradient(360deg, black 2%, transparent);
 }
+
 .email-2{
-background-color: transparent;
-color: white;
+background-color: transparent !important;
+color: white !important;
 }
 .start-button{
-    background-color: rgb(231 14 14);
-    color: white;
+    background-color: rgb(231 14 14) !important;
+    color: white !important;
     width: 192px;
     height: 55px;
     margin-left: 490px;
@@ -79,8 +81,9 @@ hr
 {
     /* border: 5px solid rgb(63, 58, 58); */
     border: 5px solid darkgrey;
-    margin-top: 227px;
-}
+    /* margin-top: 99px;*/
+    margin-top: 104px;
+} 
 #page{
     width: 1513px;
     height: 672px;
@@ -95,7 +98,7 @@ hr
 #page2-subText{
     color: white;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
     margin: 18px;
 }
 .image-container{
@@ -136,4 +139,47 @@ hr
     color: blue;
     font-size: 15px;
     font-weight: 400;
+}
+#download-icon{
+    color: white;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: -76px;
+}
+.create-profile{
+    width: 590px;
+    margin-left: 706px;
+    margin-top: -400px;
+    position: absolute;
+}
+#questions{
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+}
+#question-accordian{
+
+}
+.accordian-heading{
+    background-color: rgba(0, 0, 0);
+    color: white;
+}
+#accordian-textblock{
+    background-color: darkgray;
+    color: white;
+}
+#hyperlink-text{
+      color: lightgray;
+      font-weight: 100;
+      font-size: 17px;
+}
+.link-block{
+    margin-left: 143px;
+    position: absolute;
+    margin-top: -47px;
+}
+.link-block-2{
+    margin-left: 396px;
+    margin-top: -315px;
+    position: absolute;
 }
