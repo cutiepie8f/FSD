@@ -1,5 +1,4 @@
 #root{
-    width: 1517px;
     opacity: 1;
     border: black;
     border-style:solid;
@@ -8,7 +7,7 @@
 }
 #bg_image{
     /* background-image: url(./netflixBackgroundImage.jpg); */
-    height: 672px;
+    height: 685px;
     background-size: cover;
    background-image:linear-gradient(183deg,#9D0E0E00 -44%, black 113%),url(./netflixBackgroundImage.jpg);
    /* background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(./netflixBackgroundImage.jpg) */
@@ -39,7 +38,7 @@
 #main-text{
     color: white;
     font-size: 53px;
-    margin-top: 220px;
+    margin-top: 128px;
     text-shadow: 1px 0px 2px;
     font-weight: 700;
 }
@@ -73,17 +72,16 @@
     font-size: 28px;
     text-align: left;
 }
-hr
+#firstpage-hr
 {
     /* border: 5px solid rgb(63, 58, 58); */
     border: 5px solid darkgrey;
     /* margin-top: 99px;*/
-    margin-top: 104px;
+    margin-top: 193px;
 } 
-#page{
-    width: 1513px;
-    height: 672px;
-    
+#sections{
+    height: 70vh;
+    background-color: rgba(0, 0, 0);
 }
 #page2-mainText{
     color: white;
@@ -97,96 +95,20 @@ hr
     font-weight: 400;
     margin: 18px;
 }
-.image-container{
-    margin-left: 18cm;
-    width: 600px;
-    position: absolute;
-    margin-top: -316px;
-}
-.text-container{
-    margin-left: 16cm;
-    position: absolute;
-    margin-top: -245px;
-    width: 600px 
-}
-#subimage{
-    width: 325px;
-    margin-left: 35px;
-    border: 2px solid darkgray;
-    height: 110px;
-    margin-top: -99px;
-    position: absolute;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0);
-}
-#image{
-    background-image: url(./image-3.png);
-    height: 85px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 12px;
-}
-#text-1{
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-}
-#text-2{
-    color: blue;
-    font-size: 15px;
-    font-weight: 400;
-}
-#download-icon{
-    /* color: white;
-    position: absolute; */
-    margin-left: 221px;
-    margin-top: -103px;
-    
-}
-#download-gif{
-    width: 50%;
-    margin-left: 47px;
-    margin-top: 28px;
-}
-.create-profile{
-    width: 590px;
-    margin-left: 706px;
-    margin-top: -400px;
-    position: absolute;
-}
-#questions{
-    color: white;
-    font-weight: 900;
-    font-size: 60px;
-}
-#question-accordian{
-
-}
-.accordian-heading{
-    background-color: rgba(0, 0, 0);
-    color: white;
-}
-#accordian-textblock{
-    background-color: darkgray;
-    color: white;
+#sections-hr{
+    border: 5px solid darkgrey;
 }
 #hyperlink-text{
-      color: lightgray;
-      font-weight: 100;
-      font-size: 17px;
+    color: lightgray;
+    font-weight: 100;
+    font-size: 17px;
 }
 .link-block{
-    margin-left: 143px;
-    position: absolute;
-    margin-top: -47px;
+  margin-left: 143px;
+  position: absolute;
+  margin-top: -47px;
 }
 .link-block-2{
-    margin-left: 396px;
-    margin-top: -315px;
-    position: absolute;
-}
-#video-1{
-    margin-top: -59%;
-    margin-left: 13%;
-    
+  margin-top: 45px;
+  position: absolute;
 }
