@@ -107,8 +107,12 @@
     font-size: 17px;
 }
 #video-1{
-    margin-top: -353px;
-    margin-left: 123px;
+    top: 111%;
+    left: 61%;
+}
+#video-2{
+    top: 261%;
+    left: 64%;
 }
 #subimage{
     width: 325px;
