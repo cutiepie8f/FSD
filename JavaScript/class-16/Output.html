@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <!--JS  Output-->
+    <!--innerHTML-->
+    <h2>InnerHTML</h2>
+
+    <input type="text" id="a">
+    <input type="button" onclick="result()" value="Insert">
+    <p id="message"></p>
+    <script>
+        function result(){
+            var x = document.getElementById("a").value;
+        document.getElementById("message").innerHTML = x;
+        }
+    </script>
+
+    <!--Document.write-->
+    <h2>Document.write</h2>
+
+    <input type="text" id="b">
+    <input type="button" onclick="result1()" value="Insert">
+    <script>
+        function result1(){
+            var x = document.getElementById("b").value;
+        document.write(x);
+        }
+    </script>
+
+    <!--console.log-->
+    <h4>Console.Log</h4>
+    <input type="text" id="c">
+    <input type="button" onclick="result2()" value="Insert">
+    <script>
+        function result2(){
+            var x = document.getElementById("c").value;
+       console.log(x);
+        }
+    </script>
+
+<!--Alert Box-->
+<h4>Alert Box</h4>
+<input type="number" id="x" placeholder="enter number">
+<input type="number" id="y" placeholder="enter number">
+<button onclick="alertBox()">result</button>
+<script>
+      function alertBox(){
+              var x = parseInt(document.getElementById("x").value);
+              var y = parseInt(document.getElementById("y").value);
+              var z = x + y;
+
+              alert(x+" + "+y+" = "+z);
+        }
+</script>
+
+</body>
+</html>

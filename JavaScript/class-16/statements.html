@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>statements</title>
+</head>
+<body>
+    <h2>Loops</h2>
+     <!--
+        Statemets
+             - A line of instructions given.
+             - Generic flow of statements creating.
+
+             Two different kinds of statements
+                 > Conditional statements
+                                  - IF statement
+                                  - IF Else statement
+                                  - Else-IF statement
+                                  - Switch statement
+                 > Looping statements
+                         - A line of statements which can provide with repeated number of turns for a specific operations.
+                                   - Pre conditioning/ Entry-controlled loop
+                                          > for loop
+                                          > while loop
+                                   - Post conditioning/ Exit-controlled loop
+                                          > do-while loop
+                 > break statement
+                 > continue statement
+                                   
+
+     -->
+     <h2>if statement</h2>
+          
+     <!--IF statement-->
+     <script>
+        var a = 50;
+        if (a<60)
+        {
+            document.write(a+" is less than 60");
+        }
+     </script>
+
+     <hr>
+
+     <h2>if else statement</h2>
+
+     <!--IF Else statement-->
+     <script>
+        var a = 70;
+        if (a<60)
+        {
+            document.write(a+" is less than 60");
+        }
+        else
+        {
+            document.write(a+" is greater than 60");
+        }
+     </script>
+        
+        <hr>
+
+        <h2>if else-if statement</h2>
+
+         <!--Else IF statement-->
+     <script>
+        var a = "dfs";
+        if (a<60)
+        {
+            document.write(a+" is less than 60");
+        }
+        else if(a>60)
+        {
+            document.write(a+" is greater than 60");
+        }
+        else if(a==60)
+        {
+            document.write(a+" is equal to 60");
+        }
+        else
+        {
+            document.write(a+" is not a valid integer");
+        }
+     </script>
+
+     <!--switch statement-->
+       
+     <hr>
+         
+     <h2>Switch Statement</h2>
+     <script>
+     var a = 50;
+     switch(a%10){
+            case 0:
+                document.write(a+" is divisible by 10.");
+                break;
+            
+            case 1:
+                document.write(a+" is divisible by 10 , if subtracted by 1");
+                break;
+
+            case 2:
+                document.write(a+" is divisible by 10 , if subtracted by 2");
+                break;
+
+            case 3:
+                document.write(a+" is divisible by 10 , if subtracted by 3");
+                break;
+
+            default:
+                document.write(a+" is not divisible by 10.");
+
+
+            }
+        
+     </script>
+            
+            <hr>
+
+            <h2>Loops</h2>
+            <script>
+                // while loop
+                var b;      // declaration
+                b = 10;      // intialization and assigning a value to the variable.
+                while(b>5)   // conditioning
+                {
+                  document.write(b+" current value <br>");  // statement of operation
+                  b--;     // unary operator - helps in making the variable value turn to increment or decrement the value. 
+                }
+
+            </script>
+
+            <hr>
+
+            <h2>For loop</h2>
+            <script>
+                // for loop
+                  for(var c=0;c<5;++c)
+                  {
+                    document.write(c+" current value. <br>") // statement of operation
+                  }
+
+            </script>
+
+            <h2>Do while loop</h2>
+
+            <script>
+                // do-while loop
+                var d = 0;
+                do{
+                    d++;
+                    document.write(d+" current value.<br>"); // statement of operation
+                    //d++;
+                }
+                while(d<5);
+            </script>
+
+</body>
+</html>

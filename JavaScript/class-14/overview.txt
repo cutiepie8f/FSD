@@ -26,4 +26,17 @@ Js Operators:
         > Arthmetic Operators
         > Comparision Operators
         > Logical Operators
+
+Functions and their scopes
+        - Global scope
+        - Local scope
                
+This Keyword
+
+Statemennts
+        -Conditional Statements
+        - Loopig statemets
+
+Boxes
+
+Output

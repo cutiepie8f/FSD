@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+</head>
+<body>
+       <h2>Boxes</h2>
+
+       <h4>Alert Box</h4>
+       <input type="number" id="a" placeholder="enter number">
+       <input type="number" id="b" placeholder="enter number">
+       <button onclick="alertBox()">result</button>
+       <script>
+             function alertBox(){
+                     var x = parseInt(document.getElementById("a").value);
+                     var y = parseInt(document.getElementById("b").value);
+                     var z = x + y;
+
+                     alert(x+" + "+y+" = "+z);
+               }
+       </script>
+
+       <hr>
+
+       <h4>Confirm box</h4>
+        
+         <button onclick="confirmBox()">Result</button>
+         <p id="results"></p>
+       <script>
+        function confirmBox(){
+            var txt;
+            if(confirm("Are you above 18 years of age?"))
+            {
+                txt = "you are eligible to vote....!"
+            }
+            else
+            {
+                txt = "you are not eligible to vote....!"
+            }
+            document.getElementById("results").innerHTML = txt;
+        }
+       </script>
+
+       <hr>
+
+       <h4>Prompt Box</h4>
+          <button onclick="promptBox()">Result</button>
+          <p id="promptresult"></p>
+       <script>
+             function promptBox()
+             {
+                var txt1;
+                var age = prompt("What is your age ?");
+                if(age==null || age=="" || isNaN(age))
+                {
+                  txt1 = "Please enter your age....!";
+                }
+                else
+                {
+                    if(age<=18)
+                {
+                    txt1 = "your age is "+age+", so you cannot vote.";
+                }
+                else{
+                    txt1 = "your age is "+age+", so you can vote.";
+                }
+
+                }
+                document.getElementById("promptresult").innerHTML = txt1;
+             }
+    </script>
+</body>
+</html>
