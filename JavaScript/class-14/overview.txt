@@ -37,6 +37,19 @@ Statemennts
         -Conditional Statements
         - Loopig statemets
 
-Boxes
+Boxes:
+     - Alert Box
+     - Confirm Box
+     - Prompt Box
 
-Output
+Output in JS:
+          - innerHTML
+          - document.write
+          - console.log
+          - alert
+
+Input in JS:
+          - confirm Box
+          - Prompt Box
+
+Arrays:
