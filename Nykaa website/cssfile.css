@@ -85,7 +85,9 @@
     margin: auto;
 }
 #banner-image-1{
-    background-image: url("https://images-static.nykaa.com/uploads/d6df2f70-aca7-40f3-a383-88e9f2dc6e49.jpg?tr=w-1200,cm-pad_resize");
-    height: 414px;
-    background-size: cover;
+    background-image: url("https://images-static.nykaa.com/uploads/7065747a-e9a7-40c2-9626-d0704854535b.jpg?tr=w-1200,cm-pad_resize");
+    height: 385px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }

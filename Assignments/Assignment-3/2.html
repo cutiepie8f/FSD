@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+</head>
+<body>
+    <button id="totalOrder" onclick="totalOrderPlaced()">Result</button>
+    <br><br>
+    <span id="1"></span>
+    <span id="2"></span>
+
+    <br><br>
+    <button id="proportionNumber" onclick="orderProportion()">Result</button>
+    <br><br>
+    <span id="3"></span>
+    <span id="4"></span>
+    <br><br>
+    <button id="proportionPercentage" onclick="proportionPercentage()">Result</button>
+
+     <script>
+        var sum=0;
+        orderData =[ {id:1,order:'Below 500',order_percentage: 20,restaurant: "Punjabi Tadka"},
+                      {id:2,order:'500-1000',order_percentage: 29,restaurant: "Punjabi Tadka"},
+                      {id:3,order:'1000-1500',order_percentage: 30,restaurant: "Punjabi Tadka"},
+                      {id:4,order:'1500-2000',order_percentage: 44,restaurant: "Punjabi Tadka"},
+                      {id:5,order:'Above 2000',order_percentage: 76,restaurant: "Punjabi Tadka"}
+                    ]
+        
+           function totalOrderPlaced()
+           {
+            for(var i=0;i<orderData.length;i++)
+            {
+                sum += orderData[i].order_percentage
+            }
+            document.getElementById("1").innerHTML = "Total number of orders placed = ";
+            document.getElementById("2").innerHTML = sum;
+             
+           }
+           function orderProportion()
+           {
+            document.getElementById("3").innerHTML = "Total number of order proportions = ";
+           document.getElementById("4").innerHTML = orderData.length;
+           }
+           function proportionPercentage()
+           {
+            for(var i=0;i<orderData.length;i++)
+            {
+                sum += orderData[i].order_percentage
+
+            }
+            for(var j=0;j<orderData.length;j++)
+            {
+               orderData[j].order_percentage = ((orderData[j].order_percentage*100)/sum).toFixed(2);
+
+            }
+             console.log("Array of Objects : ");
+             console.log(orderData);            
+           
+           }
+     </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <style>
+        #firstpart{
+            height: 145px;
+            background-color: brown;
+            box-shadow: 0px 2px 3px #00000029;
+        }
+        #headingPart{
+            margin: auto;
+             width: 357px;
+             color: white;
+        }
+        #restrauntList
+        {
+            position: absolute;
+            left: 44%;
+        }
+        #result{
+            color: rgb(255, 208, 0);
+            width: 258px;
+           position: absolute;
+           left: 33%;
+           top: 27%;
+        }
+        #secondpart{
+            background-color: blue;
+            color: white;
+            height: 272px;
+            width: 100%;
+            margin-top: 1%;
+            box-shadow: 0px 2px 3px #00000029;
+        }
+        #headingPart2{
+            position: absolute;
+            left: 20%;
+        }
+        #data{
+            position: absolute;
+            margin-top: 10%;
+            margin-left: 29%;
+        }
+        #output{
+            width: 30%;
+            margin-top: 14%;
+            position: absolute;
+            margin-left: 31%;
+}
+#button{
+    background: black;
+    color: white;
+}
+#restrauntList
+{
+    background-color: black;
+    color: white;
+
+}
+
+        
+    </style>
+</head>
+<body>
+    <div id="firstpart">
+        <div id="headingPart"><h2>Name Of All The Restraunts are : </h2></div>
+        <button id="restrauntList" onclick="printAllRestaurantNames()">Find Restraunt</button>
+        <p id="result"></p>
+    </div>
+    
+    <div id="secondpart">
+    <div id="headingPart2"><h2>Filter All The Restraunt By The Entered City : </h2></div>
+    <div id="data">
+        <input type="text" id="inputCity" placeholder="Please enter the city">
+        <input type="button" id="button" onclick="filterRestaurant()" value="FilterRestraunt">
+    </div>
+   <div id="output">
+    <p id="heading"></p>
+    <p id="1"></p>
+    <p id="2"></p>
+   </div>
+    </div>
+
+   
+<script>
+        restraunt1 = {
+                     name:"Taj", 
+                      address:"Khargar", 
+                      city:"Mumbai"
+                    }
+        restraunt2 = {
+                      name:"Rajhans",
+                      address:"shahpura",
+                      city:"Bhopal"
+                    }
+        restraunt3 = {
+                      name:"sagar gaire",
+                      address:"kolar",
+                      city:"Bhopal"
+                    }
+        
+        
+        
+        var restrauntList = [restraunt1,restraunt2,restraunt3];
+        function printAllRestaurantNames(){
+              document.getElementById("result").innerHTML = "Please see the result on the console....!"
+            for(var i = 0;i<restrauntList.length;i++)
+            {
+                console.log(restrauntList[i].name);
+            }
+        }
+        
+       function filterRestaurant()
+        {
+            var cityName = document.getElementById("inputCity").value;
+            filterRestaurantByCity(cityName);
+
+        }
+        function filterRestaurantByCity(city_name)
+        {
+            var x  = restrauntList.filter(function(a){ return a.city==city_name});
+            for(var j=0;j<x.length;j++)
+            {
+               document.getElementById("heading").innerHTML = "Available restraunt in "+city_name+" are :"
+               document.getElementById(j+1).innerHTML = x[j].name
+            }
+
+        }
+        
+        
+    </script>
+</body>
+</html>
