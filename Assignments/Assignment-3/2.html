@@ -4,20 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
+    <style>
+        #heading{
+            width: 29%;
+            margin: auto;
+            font-family: sans-serif;
+        }
+        #part-1{
+            background-color: darkblue;
+            padding: 9%;
+            margin-top: 1%;
+            position: absolute;
+            height: 66%;
+            width: 81%;
+}
+
+        
+        #totalOrder{
+            width: 10%;
+            padding: 1%;
+            background-color: black;
+            color: white;
+            font-size: 157%;
+            margin-left: 4%;
+            position: absolute;
+            top: 16%;
+        }
+        #sub-heading{
+            position: absolute;
+            top: 1%;
+            color: white;
+             margin-left: 21%;
+        }
+        #proportionNumber{
+            width: 10%;
+            padding: 1%;
+            background-color: black;
+            color: white;
+            font-size: 157%;
+            margin-left: 55%;
+            position: absolute;
+            top: 58%;
+        }
+        #label{
+            color: white;
+            font-size: 137%;
+            font-family: sans-serif;
+            position: absolute;
+            top: 444px;
+            left: 9%;
+        }
+        #label2{
+            color: white;
+            font-size: 137%;
+            font-family: sans-serif;
+            position: absolute;
+            top: 644px;
+            left: 9%;
+        }
+        #proportionPercentage{
+            width: 10%;
+            padding: 1%;
+            background-color: black;
+            color: white;
+            font-size: 157%;
+            margin-left: 55%;
+            position: absolute;
+            top: 85%;
+        }
+       
+
+
+    </style>
 </head>
 <body>
-    <button id="totalOrder" onclick="totalOrderPlaced()">Result</button>
-    <br><br>
-    <span id="1"></span>
-    <span id="2"></span>
-
-    <br><br>
-    <button id="proportionNumber" onclick="orderProportion()">Result</button>
-    <br><br>
-    <span id="3"></span>
-    <span id="4"></span>
-    <br><br>
-    <button id="proportionPercentage" onclick="proportionPercentage()">Result</button>
+    <div style="background-color: black;color: white; padding: 1px;" >
+        <div id="heading"><h1>Assignment-3 (Question-2)</h1></div>
+    </div>
+    <!-- <button id="totalOrder" onclick="totalOrderPlaced()">Result</button> -->
+    <div id="part-1">
+        <h1 id="sub-heading">Order Details For Punjabi Tadka Restaurant In Delhi are :  </h1>
+        <label for="totalOrder" style="color: white;font-size: 137%;font-family: sans-serif;">Please click on the button to find the total number of order placed</label>
+        <button id="totalOrder" onclick="totalOrderPlaced()">Result</button>
+        <div style="position: absolute;left: 45%;top: 33%;">
+            <span id="1" style="color: white;font-size: 137%;font-family: sans-serif;"></span>
+            <span id="2" style="color: white;font-size: 137%;font-family: sans-serif;"></span>
+        </div>
+   </div>
+        <label for="proportionNumber" id="label" >Please click on the button to find the total number of order proportions </label>
+        <button id="proportionNumber" onclick="orderProportion()">Result</button>
+        <div style="position: absolute;left: 47%;top: 75%;">
+            <span id="3" style="color: white;font-size: 137%;font-family: sans-serif;"></span>
+            <span id="4" style="color: white;font-size: 137%;font-family: sans-serif;"></span>
+        </div>
+       <label for="proportionPercentage" id="label2">Please click on the button to find the percentage of each proportion</label>
+        <button id="proportionPercentage" onclick="proportionPercentage()">Result</button>
+        <p id="5" style="color: white; font-family:sans-serif;top: 100%;left: 52%;position:absolute; font-size: 137%;"></p>
+    </div>
 
      <script>
         var sum=0;
@@ -55,6 +138,7 @@
                orderData[j].order_percentage = ((orderData[j].order_percentage*100)/sum).toFixed(2);
 
             }
+            document.getElementById("5").innerHTML = "Please see the result on the console.....!"
              console.log("Array of Objects : ");
              console.log(orderData);            
            
