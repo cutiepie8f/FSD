@@ -9,8 +9,7 @@
     <h2>Calculate The Average Rating Of The Restraunt</h2>
     <input type="button" id="averageRating" value="Calculate Average Rating" onclick="calculateAverageRating()">
       <script>
-        var sum=0;
-        var count=0;
+       
         ratingData = [
                       {restaurant: 'KFC', rating:5},
                       {restaurant: 'Burger King', rating:4},
@@ -23,23 +22,33 @@
                     ] 
                function calculateAverageRating()
                {
-                // for(var i=0;i<ratingData.length;i++)
-                // {
-                //     var x = ratingData[i].restaurant;
-                //     if(x==ratingData[i].restaurant)
-                //     {    count++;
-                //          sum += ratingData[i].rating;
-                //     }
-                //     else
-                //     {
-                //         continue;
-                //     }
-                //     var avg = sum/count;
-                //     console.log("restaurant : "+x+" "+"rating : "+sum);
-                // }
-                var x = ratingData.filter(function(a){return })
-                
-               }     
+               
+                for(var i=0;i<ratingData.length;i++)
+                {
+                  var sum=0;
+                  var count=0;
+                  var a = ratingData[i].restaurant;
+                  for(var j=0;j<ratingData.length;j++)
+                  {
+                    if(ratingData[j].restaurant==a)
+                    {
+                      count++;
+                      sum += ratingData[j].rating;
+                     
+                      
+                    }
+                  }
+                  
+                  var res = sum/count;
+                  
+                   ratingData[i].rating = res;
+                  
+
+                }
+                 console.log(ratingData);
+                }
+               
+               
 
 
       </script>
