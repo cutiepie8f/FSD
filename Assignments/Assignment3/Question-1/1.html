@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3(Question-1)</title>
+    <script type="text/javascript" src="./1.js"></script>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <div id="root">
+           <div id="titleText"><h1>Assignment-3 (Question-1)</h1></div>
+        <div id="section-a">
+            <div id="part-a">
+                <label id="label-a">Please click on the button to check the restraunt list</label>
+            </div>
+            <div style="position: relative;margin-left: 47%;">
+                 <input id="button-a" type="button" onclick="firstOperation()" value="Result"/>
+            </div >
+            <div style="width: 30%;margin-left: 34%;position: relative;padding: 4%;">
+                <p id="result1"></p>
+            </div> 
+        </div> 
+
+        <div id="section-a">
+            <div id="part-a" style="width: 49%;">
+                <label id="label-a">Please click on the button to check the name of all the restraunts</label>
+            </div>
+            <div style="position: relative;margin-left: 47%;">
+                 <input id="button-a" type="button" onclick="secondOperation()" value="Result"/>
+            </div >
+            <div id="resultpart">
+                <p id="result-text" style="font-size: 150%;"></p>
+                <p id="result2"></p>
+            </div> 
+        </div> 
+
+        <div id="section-a">
+            <div id="part-a" style="width: 49%;margin-left: 25%;">
+                <label id="label-a">Please click on the button to filter the restraunt by city</label>
+            </div>
+            <div style="position: relative;margin-left: 31%;">
+                <input type="text" id="city" placeholder="Please enter the city eg., Delhi" style="width: 28%;padding: 12px;font-size: 125%;font-family: sans-serif;font-weight: 600;">
+                 <input id="button-a" type="button" onclick="thirdOperation()" value="Result" style="margin-left: 2%;margin-top: 3px;margin-left: 2%;position: absolute;">
+            </div >
+            <div id="resultpart">
+                <p id="result-text" style="font-size: 150%;"></p>
+                <p id="result3"></p>
+            </div> 
+        </div> 
+            
+           
+    </div>
+</body>
+</html>

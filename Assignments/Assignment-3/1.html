@@ -13,11 +13,13 @@
            
         }
         #headingPart{
-            margin-left: 35%;
-             width: 357px;
-             color: white;
-             position: absolute;
-        }
+            margin-left: 31%;
+            width: 374px;
+            color: white;
+            position: absolute;
+            top: 18%;
+}
+        
         #restrauntList
         {
             position: absolute;
@@ -27,7 +29,7 @@
             color: white;
             box-shadow: 0px 0px 3px;
         }
-        #result{
+        #result1{
             color: rgb(255, 208, 0);
             width: 293px;
            position: absolute;
@@ -46,11 +48,16 @@
         #headingPart2{
             position: absolute;
             left: 25%;
+            top: 60%;
+
         }
         #data{
             position: absolute;
-            margin-top: 10%;
-            margin-left: 29%;
+            left: 44%;
+            top: 73%;
+            background-color: black;
+            color: white;
+            box-shadow: 0px 0px 3px;
         }
         #output{
             width: 34%;
@@ -59,11 +66,7 @@
             margin-left: 31%;
             font-family: sans-serif;
 }
-#button{
-    background: black;
-    color: white;
-    box-shadow: 0px 0px 3px;
-}
+
 #restrauntList
 {
     background-color: black;
@@ -78,35 +81,51 @@
     color: white;
     font-family: sans-serif;
 }
+#result2{
+           color: rgb(255, 208, 0);
+            width: 293px;
+           position: absolute;
+           left: 36%;
+           top: 60%;
+           font-family: sans-serif;
+}
 
         
     </style>
+          <script type="text/javascript" src="./1.js"></script>
 </head>
 <body>
     <div id="firstHeading">
         <div style="width: 42%;margin-left: 33%;"><h2 style="margin: 1%;">Assignment-3(Question-1)</h2></div>
     </div>
     <div id="firstpart">
-        <div id="headingPart"><h3 style="font-family: sans-serif;">Name Of All The Restraunts are : </h3></div>
-        <button id="restrauntList" onclick="printAllRestaurantNames()">Find Restraunt</button>
-        <p id="result"></p>
+        <div id="headingPart"><label style="font-family: sans-serif;">Please click on the button to check the restraunt list </label></div>
+        <button id="restrauntList" onclick="firstOperation()">Result</button>
+        <p id="result1"></p>
     </div>
     
     <div id="secondpart">
-    <div id="headingPart2"><h3 style="font-family: sans-serif;">Filter All The Restraunt By The Entered City : </h3></div>
-    <div id="data">
+    <div id="headingPart2"><label style="font-family: sans-serif;">Please click on the button to check the name of all the restraunts</label></div>
+     <div id="data">
+        <input type="button" onclick="secondOperation()" value="Result" style="background-color: black;color: white;">
+    </div>
+    <div id="output">
+    <p id="result2"></p>
+    </div> 
+    <!-- <div id="data">
         <input type="text" id="inputCity" placeholder="Please enter the city">
         <input type="button" id="button" onclick="filterRestaurant()" value="Filter Restraunt">
-    </div>
-   <div id="output">
-    <p id="heading"></p>
+    </div> -->
+   <!-- <div id="output"> -->
+    <!-- <p id="heading"></p>
     <p id="1"></p>
-    <p id="2"></p>
+    <p id="2"></p> -->
+   
    </div>
     </div>
 
    
-<script>
+<!-- <script>
         restraunt1 = {
                      name:"Taj", 
                       address:"Khargar", 
@@ -131,7 +150,9 @@
             for(var i = 0;i<restrauntList.length;i++)
             {
                 console.log(restrauntList[i].name);
+              
             }
+           
         }
         
        function filterRestaurant()
@@ -152,6 +173,6 @@
         }
         
         
-    </script>
+    </script> -->
 </body>
 </html>
