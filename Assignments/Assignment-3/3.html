@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="proportionPercentage" id="label2">Please click on the button to find the percentage of each proportion</label>
+        <button id="proportionPercentage" onclick="proportionPercentage()">Result</button>
+        <p id="5" style="color: white; font-family:sans-serif;top: 100%;left: 52%;position:absolute; font-size: 137%;"></p>
+   
+        <script>
+        var sum=0;
+        orderData =[ {id:1,order:'Below 500',Totalorder: 20,restaurant: "Punjabi Tadka"},
+                      {id:2,order:'500-1000',Totalorder: 29,restaurant: "Punjabi Tadka"},
+                      {id:3,order:'1000-1500',Totalorder: 30,restaurant: "Punjabi Tadka"},
+                      {id:4,order:'1500-2000',Totalorder: 44,restaurant: "Punjabi Tadka"},
+                      {id:5,order:'Above 2000',Totalorder: 76,restaurant: "Punjabi Tadka"}
+                    ]
+
+            function proportionPercentage()
+           {
+            for(var i=0;i<orderData.length;i++)
+            {
+                sum += orderData[i].Totalorder
+
+            }
+            for(var j=0;j<orderData.length;j++)
+            {
+                if(orderData[j].id == j+1)
+                {
+                    orderData[j].Totalorder = 
+                    order_percentage = ((orderData[j].Totalorder*100)/sum).toFixed(2);
+                    
+                }
+               //orderData[j].Totalorder = ((orderData[j].Totalorder*100)/sum).toFixed(2);
+
+            }
+            document.getElementById("5").innerHTML = "Please see the result on the console.....!"
+             console.log("Array of Objects : ");
+             console.log(orderData);            
+           
+           }            
+        </script>
+    </div>
+</body>
+</html>
