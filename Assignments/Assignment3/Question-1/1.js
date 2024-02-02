@@ -56,7 +56,7 @@ function firstOperation(){
 function secondOperation(){
     var output2 = restrauntObject.printAllRestrauntName();
     console.log(output2);
-    document.getElementById("result-text").innerHTML = "Name of all the restraunts are : ";
+    document.getElementById("result-text").innerHTML = "Name of all the Restraunts are : ";
     document.getElementById("result2").innerHTML = output2+"<br><br> you can also check the result on the console..!";
 }
 function thirdOperation(){
