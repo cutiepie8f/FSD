@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-4</title>
     <script type="text/javascript" src="./1.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h2>Calculate The Average Rating Of The Restraunt</h2>
-    <input type="button" id="averageRating" value="Calculate Average Rating" onclick="firstOperation()">
+    <div id="root">
+        <div id="root">
+            <div id="titleText"><h1>Assignment-4</h1></div>
+            <div id="section-a">
+                <label id="firstLabel">Please click on the button to find the average rating of the restraunt</label>
+                <input id="button-a" type="button" onclick="firstOperation()" value="Result">
+                <br><br>
+                <div id="part1">
+                <span id="result-1"></span>
+                </div>
+                <hr style="border: 2px solid darkred;">
+            </div>
+              
+            <div id="section-a">
+                <label id="firstLabel" style="width: 55%;top: 17%;">Please click on the button to find the average rating greater than or equal to 4</label>
+                <input id="button-a" type="button" onclick="secondOperation()" value="Result">
+                <br><br>
+                <div id="part1">
+                <span id="result-2"></span>
+                </div>
+                
+            </div>
+    </div>
      
 </body>
 </html>

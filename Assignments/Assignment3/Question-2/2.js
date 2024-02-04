@@ -18,26 +18,26 @@ class OrderDetails{
 
   totalOrderProprtion =()=>
   { 
-    var count = 0;
-   this.orderData.forEach(element => {
-      count++;
-   });
-   return count;
-       //return this.orderData.length;
+//     var count = 0;
+//    this.orderData.forEach(element => {
+//       count++;
+  // });
+  var arr = this.orderData.map(a=>a.Totalorder);
+  console.log(arr);
+  return arr.length;
+  // return count;
+      
   }
 
   proportionPercentage()
   {
-    var total = 0;
-    this.orderData.forEach(element => {
-        total += element.Totalorder
-        
-    });
+    var total = this.totalOrderPlaced();
     
     for(var i=0;i<this.orderData.length;i++)
     {
         this.orderData[i].order_percentage = ((this.orderData[i].Totalorder*100)/total).toFixed(2);
        delete this.orderData[i].Totalorder;
+      
     }
     return this.orderData;
   }

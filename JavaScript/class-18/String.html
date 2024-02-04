@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h2>String</h2>
+    
+    <script>
+        //Intializing the string
+        var a = "Welcome"
+        // Basic String
+        document.write("Basic string : "+a+"<br><br>");
+        //Length of String
+        var len = a.length;
+        document.write("Length of string : "+len+"<br><br>");
+        //character at a position in the string
+        var b = a.charAt(5);
+        document.write("Character at a position in the string : "+b+"<br><br>");
+        // concatinating two string
+        var c = " to Edureka!";   // second string
+        var d = a.concat(c);
+        document.write("Concatinating of two string : "+d+"<br><br>");
+        // Last index of a string
+        var e = a.lastIndexOf("e");
+        document.write("Last index of string : "+e+"<br><br>");
+        // Match to a string
+        var f = "The rAin in SPAIN stays maiNly in the Plain";
+        var g1 = f.match("ain"); // case-sensitive
+        var g2 = f.match(/ain/); // case-sensitive, regular expression
+        var g3 = f.match(/ain/i); // case In-sensitive, regular expression
+        var g4 = f.match(/ain/gi); // Global , case In-sensitive, regular expression
+        
+        document.write("1. Match to a string : "+g1+"<br><br>")
+        document.write("1. Match to a string : "+g2+"<br><br>")
+        document.write("1. Match to a string : "+g3+"<br><br>")
+        document.write("1. Match to a string : "+g4+"<br><br>")
+
+        //slice
+        var g1 = a.slice(1,3);  //Positive number
+        var g2 = a.slice(-3,-1);  //Negative number
+        document.write("Slice of a string : "+g1+"<br><br>");
+        document.write("Slice of a string : "+g2+"<br><br>");
+        
+        //split
+        var h1 = d.split("");  //splits into characters
+        var h2 = d.split(" ");  //splits into words
+        var h3 = d.split(" ",2);  //splits into words
+        var h4 = d.split("",2);  //splits into letters till the mentioned position
+        document.write("split of a string : "+h1+"<br><br>");
+        document.write("split of a string : "+h2+"<br><br>");
+        document.write("split of a string : "+h3+"<br><br>");
+        document.write("split of a string : "+h4+"<br><br>");
+        
+        // Sub Str
+        var i1 = d.substr(5);    // single position
+        var i2 = d.substr(1,3);   // double position
+        document.write("1. Sub Str of a string : "+i1+"<br><br>");
+        document.write("2. Sub Str of a string : "+i2+"<br><br>");
+         
+        // Sub-String
+        var j1 = d.substring(5);    // single position
+        var j2 = d.substring(1,3);   // double position positive
+        var j3 = d.substring(-3,-1);   // double position negative 
+        //note: negative value not accepted in substring
+        document.write("1. Sub-String of a string : "+j1+"<br><br>");
+        document.write("2. Sub-String of a string : "+j2+"<br><br>");
+        document.write("2. Sub-String of a string : "+j3+"<br><br>");
+        
+        //Math function
+        var k=5.3;
+        document.write("To Ceil : "+Math.ceil(k)+"<br><br>"); //Round up - Upper Value
+        document.write("To Floor : "+Math.floor(k)+"<br><br>");  //Round up - lower Value
+        document.write("Square Root : "+Math.sqrt(k)+"<br><br>"); // Square root ofa value
+        document.write("Value of PI : "+Math.PI+"<br><br>");         // value of Pi
+        document.write("Power of a value : "+Math.pow(5,3)+"<br><br>"); // Power of a value
+
+    </script>
+</body>
+</html>

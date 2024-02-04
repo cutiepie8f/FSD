@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>VAR v/s Let v/s Const</h2>
+    <h4>VAR</h4>
+    <!--
+        VAR 
+           - Introduced and declared before JS ES6.
+           - SCOPE : Functional and Global scope(Blocked Scope).
+           - can be redeclared and updated
+    -->
+    <script>
+        var b = 53;  //Global Scope value
+        function a()
+        {
+            var b = 22;  // Local Scope value
+            document.write("1. Inside the function : "+b+"<br><br>")
+        }
+        document.write("1. Outside the function : "+b+"<br><br>")
+        a();
+        //.............................................................
+        // Re-declaration
+        var b1 = 56;
+        var b1 = 1222;
+        document.write("1. Re-Declaration Value : "+b1+"<br><br>")
+        //.....................................................................
+        //Updated value
+        var b2 = 156;
+        b2 = 12;
+        document.write("1. Updating the Value : "+b2+"<br><br>")
+    </script>
+    <hr>
+    <h4>Let</h4>
+    <!--
+        Let 
+           - Introduced in JS ES6.
+           - SCOPE : Functional and Global scope(Blocked Scope).
+           - cannot be re-declared 
+           - can be  updated
+    -->
+    <script>
+          let c = 53;  //Global Scope value
+        function a1()
+        {
+            let c = 22;  // Local Scope value
+            document.write("2. Inside the function : "+c+"<br><br>")
+        }
+        document.write("2. Outside the function : "+c+"<br><br>")
+        a1();
+        //.............................................................
+        // Re-declaration(Error)
+        //let c1 = 56;
+        //let c1 = 1222 cannot be re-declare gives error
+        //document.write("2. Re-Declaration Value : "+c1+"<br><br>")
+        //.....................................................................
+        //Updated value
+        let c2 = 156;
+        c2 = 12;
+        document.write("2. Updating the Value : "+c2+"<br><br>")
+    </script>
+    <hr>
+    <h4>Const</h4>
+    <!--
+        Const 
+           - Introduced in JS ES6.
+           - SCOPE : Functional and Global scope(Blocked Scope).
+           - cannot be re-declared 
+           - cannot be  updated
+    -->
+    <script>
+         const d = 53;  //Global Scope value
+        function a3()
+        {
+            const d = 22;  // Local Scope value
+            document.write("3. Inside the function : "+d+"<br><br>")
+        }
+        document.write("3. Outside the function : "+d+"<br><br>")
+        a3();
+        //.............................................................
+        // Re-declaration(Error)
+        //const d1 = 56;
+        //const d1 = 1222;  cannot be re-declare gives error
+        document.write("3. Re-Declaration Value : "+d1+"<br><br>")
+        //.....................................................................
+        //Updated value (Cannot be updated)
+        const d2 = 156;
+        d2 = 12;
+        document.write("3. Updating the Value : "+d2+"<br><br>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#root{
+    height: 200%;
+    background-color: brown;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#titleText{
+    width: 14%;
+    margin: auto;
+    color: white;
+    font-family: sans-serif;
+    font-size: 100%;
+
+}
+#firstLabel{
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    font-size: 151%;
+    width: 54%;
+    margin-left: 28%;
+    top: 6%
+}
+#button-a{
+    background-color: black;
+    color: white;
+    size: 41%;
+    width: 11%;
+    padding: 2%;
+    font-size: 173%;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 12%;
+    margin-left: 44%;
+    
+}
+#part1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 157%;
+    width: 31%;
+    margin: auto;
+    position: relative;
+    margin-top: 3%;
+}

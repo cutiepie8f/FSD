@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This Keyword</h2>
+    <script>
+        //Referring an object
+
+        // If used ALONE-> refer a global object
+        var x = 50;
+        var a = this.x;
+        document.write("ALONE : "+a+"<br><br>");
+
+        // If used in a function->refer to variables of global object
+        var x1 = 100;   // Global Scope
+        function print()
+        {
+            var x1 = 250;   //   Local Scope
+            document.write("Without this : "+x1+"<br><br>")
+            document.write("With this : "+this.x1+"<br><br>")
+        }
+        print();
+
+        //If used in a method -> refer to the owner of the object
+        var x2 = 125;
+        function print2()
+        {
+            this.x2 = 273;
+            this.display = function()
+            {
+                var x2 = 7;
+                document.write("Without this : "+x2+"<br><br>")
+                document.write("With this : "+this.x2+"<br><br>")
+            }
+            
+        }
+        var obj = new print2();
+        obj.display();
+
+       
+</script>
+
+<!--If used in an event ->refers to the element-->
+    <div style="width: 100px; height: 100px; border: 1px solid green;" 
+    onclick="this.style.background='red'"
+    ondblclick="this.style.background='green'"></div>
+</body>
+</html>

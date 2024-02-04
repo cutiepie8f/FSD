@@ -33,14 +33,15 @@ class RestaurantManager {
 
             printRestrauntList = () =>
             {
+                console.log(this.restaurantList);
                 return this.restaurantList;
             }
-            printAllRestrauntName = () =>
+            printAllRestrauntName()
             {
                 return this.restaurantList.map(a =>a.name);
             }
 
-            filterRestaurantByCity = (city) =>
+            filterRestaurantByCity(city)
             {
                 return this.restaurantList.filter(b =>b.city == city );
             }

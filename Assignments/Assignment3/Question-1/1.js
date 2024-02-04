@@ -46,21 +46,27 @@ class RestaurantManager {
             }
 
 }
+//call upon the class into a specific object
 var restrauntObject = new RestaurantManager();
 
+// operation for first part - a
 function firstOperation(){
     var output1 = restrauntObject.printRestrauntList();
     console.log(output1);
     document.getElementById("result1").innerHTML = "Please see the result on the console.....!"
 }
+
+// operation for first part - b
 function secondOperation(){
     var output2 = restrauntObject.printAllRestrauntName();
     console.log(output2);
     document.getElementById("result-text").innerHTML = "Name of all the Restraunts are : ";
     document.getElementById("result2").innerHTML = output2+"<br><br> you can also check the result on the console..!";
 }
+
+// operation for first part - c
 function thirdOperation(){
-        cityname = document.getElementById("city").value;
+        var cityname = document.getElementById("city").value;
         var output3 = restrauntObject.filterRestaurantByCity(cityname);
         console.log(output3);
         document.getElementById("result3").innerHTML = "Please see the result on the console.....!"
