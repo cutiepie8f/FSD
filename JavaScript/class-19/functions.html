@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+      <h2>Functions</h2>
+      <!--Normal Conditions-->
+      <script>
+        
+        function fun1()
+        {
+            var value = 25;
+            document.write(value+"<br>");
+        }
+       
+        function fun2()
+        {
+            var value = 137;
+            document.write(value+"<br>");
+        }
+        fun2();
+        fun1();
+        
+      </script>
+
+      <hr>
+       <h2>Call Back Function(01)</h2>
+      <!--Call Back Function(01)-->
+      <script>
+        function second(c)
+        {
+            //console.log(c);
+            document.write(c);
+        }
+        function first(a,b)
+        {
+            var sum = a+b;
+            return sum;
+        }
+        var total = first(25, 133);
+        second(total);
+
+      </script>
+         
+         <h2>Call Back Function(02)</h2>
+          <!--Call Back Function(02)-->
+      
+      <script>
+        function display(z)
+        {
+            console.log(z);
+        }
+        function cal(a,b,c){
+            var sum = a+b+c;
+             display(sum);
+        }  
+        cal(12, 15, 5); 
+       
+        // another case   
+        function display1(z)
+        {
+            console.log(z);
+        }
+        function cal1(a,b,c){
+            var sum = a + b;
+             c(sum);
+        }  
+        cal1(12, 15, display); 
+
+      </script>
+
+      <hr>
+      <h2>Set TimeOut Function</h2>
+      <script>
+        function a()
+        {
+            var value = 128;
+            console.log(value);
+        }
+       setTimeout(a,2000);  // 2000 -> 2000 milisecond (2 seconds)
+      </script>
+
+      <hr>
+
+      <h2>Arrow Function</h2>
+      <!--Arrow function-->
+
+      <script>
+        var amount = (x,y) => x*y; // function declaration with opertion
+        console.log(amount(5, 100)); // calling the function
+      </script>
+
+       <hr>
+       <!--Function expression-->
+       <h2>Function expression</h2>
+       
+       <script>
+        var hello;        //variable declaration
+        hello = function()   // declare a function
+        {
+            return "Hello World";
+        }
+        console.log(hello());    // call/trigger a function
+    
+    </script>
+
+    <hr>
+
+    <h2>Constructors</h2>
+    <!--Constructors-->
+    <script>
+        function employee(a, b, c, d)
+        {
+            this.firstname = a;
+            this.lastname = b;
+            this.age = c;
+            this.department = d;
+        }
+        var manager = new employee("Joe", "Rogers","34","HR");
+        var emp1 = manager.firstname+" "+ manager.lastname+" | "+manager.age+" | "+manager.department;
+        console.log(emp1);
+    </script>
+
+
+</body>
+</html>

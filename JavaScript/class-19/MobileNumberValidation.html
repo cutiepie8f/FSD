@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .error{
+            color: red;
+            background-color: lightpink;
+        }
+        .success{
+            color: green;
+            background-color: lightgreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <form method="post">
+        <input name="telephone" id="number" type="text" maxlength="10" placeholder="Enter a mobile number...">
+        <input type="submit">
+        <p></p>
+    </form>
+    <script>
+        $(document).ready(function(){
+            $("form").submit(function(event){
+                var mobile = /^[1-9]{1}[0-9]{9}$/;
+                var currValue = $("#number").val();
+                if(mobile.test(currValue)==false && length.currValue !=10)
+                {
+                    $("p").html("Invalid mobile number").addClass("error").show().fadeOut(2000);
+                }
+                else
+                {
+                    $("p").html("Valid mobile number").addClass("success").show().fadeOut(2000);
+                }
+                event.preventDefault();
+            })
+        })
+    </script>
+</body>
+</html>

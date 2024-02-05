@@ -68,7 +68,8 @@ function firstOperation()
 
 function secondOperation()
 {
-  var output2 = ratingDataObject.avgRating(ratingDataObject.averageRating());
+  var avg_rating = ratingDataObject.averageRating();
+  var output2 = ratingDataObject.avgRating(avg_rating);
    console.log(output2);
    document.getElementById("result-2").innerHTML = "Please see the result on the console";
 }

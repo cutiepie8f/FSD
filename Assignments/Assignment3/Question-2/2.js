@@ -23,17 +23,15 @@ class OrderDetails{
 //       count++;
   // });
   var arr = this.orderData.map(a=>a.Totalorder);
-  console.log(arr);
+ // console.log(arr);
   return arr.length;
   // return count;
       
   }
 
-  proportionPercentage()
+  proportionPercentage(total)
   {
-    var total = this.totalOrderPlaced();
-    
-    for(var i=0;i<this.orderData.length;i++)
+  for(var i=0;i<this.orderData.length;i++)
     {
         this.orderData[i].order_percentage = ((this.orderData[i].Totalorder*100)/total).toFixed(2);
        delete this.orderData[i].Totalorder;
@@ -62,8 +60,8 @@ function secondOperation()
 
 function thirdOperation()
 {
-   
-    var output3 = OrderDetailsObject.proportionPercentage();
+     var total_order = OrderDetailsObject.totalOrderPlaced();
+    var output3 = OrderDetailsObject.proportionPercentage(total_order);
      console.log(output3);
      document.getElementById("result-text3").innerHTML = "Please see the result on the console.....!";
     
