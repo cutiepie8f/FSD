@@ -6,13 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="z-3 position-absolute p-5 rounded-3"><span>
-        <img src="../Mini Project-1(Netflix Home Page)/Netfilx WebApp/image-2.jpg" alt="">
-    </span></div>
-    <div class="z-0 position-absolute p-5 rounded-3"><span>
-        <img src="../Mini Project-1(Netflix Home Page)/Netfilx WebApp/image-2.jpg" alt="">
-    </span></div>
-
-   
+    <form name="myForm" onsubmit="validate()">
+        <label for="name">Name</label>
+    <input type="text" id="name" name="firstname">
+    <br><br>
+    <label for="age">Age</label>
+    <input type="number" id="age" name="userage">
+     <br><br>
+     <input type="email" placeholder="email" required>
+     <button>Submit</button>
+    </form>
+    <script>
+        function validate()
+        {
+            a = document.forms["myForm"]["firstname"].value;
+            b = document.forms["myForm"]["userage"].value;
+            if(a!="" && b!="")
+            {
+                alert("success...........!")
+            }
+            else if(a=="" && b=="")
+            {
+                alert("Name and age must be filled......!")
+            }
+            else{
+                if(a=="")
+                {
+                    alert("Name must be filled......!");
+                }
+                else if(b=="")
+                {
+                    alert("Age must be filled......!")
+                }
+            }
+        
+        
+        }
+    </script>
 </body>
 </html>

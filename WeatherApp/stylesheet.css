@@ -16,7 +16,7 @@
     background-color: black !important;
     width: 100%;
     color: white;
-    max-width: 492px;
+    max-width: 114px;
     padding: 10em;
     position: absolute;
     margin: 1em;
@@ -51,9 +51,10 @@
     top: 36px;
     left: 415px;
     height: 44px;
-    width: 44px 
+    width: 44px ;
+    transition: 0.2s ease-in-out;
 }
-.cityName{
+.city{
     /* width: 197%; */
     align-items: l;
     position: absolute;
@@ -62,7 +63,7 @@
     color: white;
     font-weight: bold;
 }
-.temperature{
+.temp{
     /* width: 225%; */
     align-items: l;
     position: absolute;
@@ -104,3 +105,20 @@
     font-size: 115%;
 
 }
+
+/*...................*/
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  

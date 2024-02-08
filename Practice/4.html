@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .error{
+            background-color: lightseagreen;
+            color: red;
+        }
+        .success{
+            background-color: rgb(48, 28, 141);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <input type="text" id="mobilenumber" placeholder="Enter number" maxlength="10">
+        <input type="submit">
+        <p></p>
+    </form>
+    <script>
+        $(document).ready(function(){
+            $("form").submit(function(event)
+            {
+               var mobile = /^[1-9]{1}[0-9]{9}$/;
+               var currValue = $("#mobilenumber").val();
+                if(mobile.test(currValue)==false && length.currValue!=10)
+                {
+                    $("p").html("Invalid mobile number.....!").addClass("error").show().fadeOut(2000);
+                }
+                else
+                {
+                    $("p").html("Valid mobile number.....!").addClass("success").show().fadeOut(2000);
+                }
+                event.preventDefault();
+            })
+        })
+    </script>
+</body>
+</html>

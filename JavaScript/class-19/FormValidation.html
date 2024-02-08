@@ -24,20 +24,24 @@
         {
             var a = document.forms["myForm"]["first"].value;
             var b = document.forms["myForm"]["userage"].value;
-            if(a == "")
-             {
-                  alert("Name must be filled.....!")
-                 
-             }
-             if(b == "")
-             {
-                  alert("Age must be filled.....!")
-             
-             }
-             if(a!="" && b!="")
-             {
-                alert("Success...!");
-             }
+            if(a!="" && b!="")
+            {
+                alert("success...........!")
+            }
+            else if(a=="" && b=="")
+            {
+                alert("Name and age must be filled......!")
+            }
+            else{
+                if(a=="")
+                {
+                    alert("Name must be filled......!");
+                }
+                else if(b=="")
+                {
+                    alert("Age must be filled......!")
+                }
+            }
              
              
         }
