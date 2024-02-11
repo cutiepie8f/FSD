@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+      <h2>Promises</h2>
+      <!--
+        Promises 
+              - It is an object proprty of JS
+              - It support 2 properties:
+                 > State
+                 > Result
+             - There are 3 states:
+                > Pending    -> Working/ Processing state
+                > Fulfilled  -> Success state
+                > Rejected   -> Error state
+      -->
+      <script>
+        function result(out)
+        {
+            document.write(out);
+        }
+        var myPromise = new Promise(function(resolve,reject){
+            var g = 8;
+            if(x==8)
+            {
+                resolve("The value is equal to 2");
+            }
+            else{
+                reject("The value is not equal to 2")
+            }
+
+        });
+        myPromise.then(
+            function(value)
+            {
+                  result(value);
+            },
+            function(error)
+            {
+                 result(error);
+            }
+        )
+        
+           
+        
+      </script>
+</body>
+</html>

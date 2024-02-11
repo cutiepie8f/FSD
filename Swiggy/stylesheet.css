@@ -53,15 +53,17 @@ hr{
     color: rgba(2, 6, 12, 0.75)  !important;
     font-size: 18px; 
     font-weight: 700;
+    
 }
 .cardtext-2{
     font-weight: 400;
     font-size: 16px;
     color: rgba(2, 6, 12);;
-    position: absolute;
+    /* position: absolute; */
     top: 90%;
     font-family: sans-serif;
     color: darkgray;
+    
 }
 .cards-part{
     width: 18rem; 
@@ -80,3 +82,12 @@ hr{
     font-size: 142%;
     font-weight: 900;
 }
+.cards-part3{
+    height: 408px;
+    border: 2px solid black;
+}
+.buttons{
+    color: black;
+    background-color: white;
+}
+
