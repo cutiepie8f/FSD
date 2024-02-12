@@ -8,7 +8,7 @@ console.log('Type : '+os.type());   // import a core package (using ES6)
 //OS Platform
 console.log('Platform : '+os.platform());
 //OS Architecture
-console.log('Platform : '+os.arch());
+console.log('Architecture : '+os.arch());
 //OS Release 
 console.log('Release : '+os.release());
 //Total Memory
@@ -27,7 +27,7 @@ console.log('Free Memory : '+os.freemem()+' Bytes');
 // var fs = require('fs');    // import a core package (using ES5)
 import fs from 'fs';         //// import a core package (using ES6)
 // create  file
-fs.writeFileSync('sample.txt','Greetings from Edureka..........!'); // create a file ,give a file nname and with a data in it.
+fs.writeFileSync('sample.txt','Greetings from Edureka..........!'); // create a file ,give a file name and with a data in it.
 console.log("File is created");
 
 //Read a file
