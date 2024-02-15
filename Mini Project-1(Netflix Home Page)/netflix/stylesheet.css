@@ -181,7 +181,7 @@
     margin-top: 26px;
     
 }
-.accordian-button::after{
+.accordion-button::after{
     background-image:url(./addbutton.svg);
     filter: invert(100%) sepia(0%) saturate(7179%) hue-rotate(0deg) brightness(100%) contrast(65%);
     background-size: cover;
