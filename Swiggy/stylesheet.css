@@ -22,7 +22,7 @@
 }
 .subsection-1{
     width: 75%;
-    height: 150%;
+    /* height: 150%; */
     margin: auto;
     margin-top: 1%;
 }
@@ -83,7 +83,7 @@ hr{
     font-weight: 900;
 }
 .cards-part3{
-    height: 408px;
+    height: 470px;
     border: 2px solid black;
 }
 .buttons{
