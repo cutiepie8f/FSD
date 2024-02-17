@@ -60,3 +60,4 @@ http.createServer(function(req,res){              // created an HTTP Server
     res.end();                                         // End of response
 }).listen(8000);
 // port no. - 8800, 8000, 8080, 5500 (Except to 3000)
+// open server - 192.168.1.8:8000/app.js (ip-address:port_number/filename.js)
