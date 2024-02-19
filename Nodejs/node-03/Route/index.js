@@ -2,7 +2,7 @@ const express = require('express');
 
 const locationController = require('../Controller/location');  // Redirecting to the contolling page of the location
  
-const route = express.Router();     // Initiated the router functionfrom the express package
+const route = express.Router();     // Initiated the router function from the express package
 
 route.get('/location', locationController.getLocation);   // As per the request made
 
