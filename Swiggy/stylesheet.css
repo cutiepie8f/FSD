@@ -46,7 +46,7 @@ hr{
     width: 48%;
     font-size: 151%;
     font-weight: 800;
-    position: absolute;
+    /* position: absolute; */
     left: 211px;
 }
 .cardtext-1{
@@ -84,7 +84,7 @@ hr{
 }
 .cards-part3{
     height: 470px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .buttons{
     color: black;
@@ -111,7 +111,8 @@ hr{
     width: 32%; 
     margin-left: 16%;
     font-weight: 800;
-    font-size: 28px
+    font-size: 28px;
+    margin-top: 24px;
 }
 .googleplay-button{
     width: 96%;
@@ -140,3 +141,58 @@ hr{
     font-size: 16px;
     font-weight: 200;
 }
+.sorting-button{
+    width: 10%;
+    background-color: white !important;
+    color: rgba(2, 6, 12, 0.75) !important;
+    padding: 10px !important;
+    border-radius: 65px !important;
+    font-weight: 500 !important;
+    font-size: 90% !important;
+    border: 1px solid rgb(226, 226, 231) !important;
+    box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px;
+}
+.dropdown-text{
+    color: rgba(2, 6, 12, 0.6);
+    font-size: 13px;
+    font-weight: 500 !important;
+}
+.dropdown-radiobutton{
+    position: absolute;
+    top: 9%;
+    left: 80%;
+}
+.dropdown-item:hover {
+    --bs-dropdown-link-hover-bg: none !important;
+
+}
+.carousel-control-next-icon {
+    background-image: url(./images/rightArrow.svg) !important;
+    margin-top: -104%;
+
+}
+.carousel-control-prev-icon {
+    background-image: url(./images/leftArrow.svg) !important;
+    margin-top: -104%;
+}
+.card-image{
+    background-image:linear-gradient(to top,rgba(0,0,0,0.79) 19%,transparent  31%), url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf");
+    border-radius: 10% !important; 
+    box-shadow: 0px 3px 5px #00000029;
+    height: 200px;
+    background-size: cover;
+    
+}
+.dropdown-item:active {
+    --bs-dropdown-link-active-bg: none !important;
+}
+.link-underline-light {
+    --bs-link-underline-opacity: 0 !important;
+}
+.link-underline-dark {
+    --bs-link-underline-opacity: 0 !important;
+    
+}
+
+
+
