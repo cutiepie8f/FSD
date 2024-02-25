@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt("Enter the string....!");
+        var org = [];
+        var rev = [];
+        str = str.toLowerCase();
+        for(var i=0; i<str.length; i++)
+        {
+             org[i] = str.charAt(i);
+        }
+        var i = str.length-1;
+        var j = 0;
+        while(i>=0)
+        {
+            rev[j] = org[i];
+            i--;
+            j++;
+        }
+        alert("org : "+org+"\n"+"rev : "+rev);
+        var flag=0;
+       for(var i=0; i<=org.length-1;i++)
+       {
+        if(org[i] == rev[i])
+        {
+            continue
+        }
+        else{
+            flag = 1;
+            break;
+        }
+       }
+       if(flag==0)
+       {
+          alert("Given string is palindrome....!");
+       }
+       else{
+        alert("Given string is not a  palindrome....!");
+       }
+
+
+    // //2 way
+    //  str = str.toLowerCase();
+    // var arr = Array.from(str);
+    // var revstr = arr.reverse();
+    //  var res = revstr.toString();
+    // alert("res : "+res+"  type of res : "+typeof(res));
+    // if(str == res)
+    // {
+    //     alert("Given string is palindrome....!");
+    // }
+    // else{
+    //     alert("Given string is not a  palindrome....!");
+    //     }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [12,5,7,3,8];
+        // var max = a[0];
+        // for(var i=0;i<a.length;i++)
+        // {
+        //     if(a[i+1]>max){
+        //         max=a[i+1];
+        //     }
+        // }
+        // var min=a[0];
+        // for(var i=0;i<a.length;i++)
+        // {
+        //     if( a[i+1]>min && a[i+1]<max){
+        //         min=a[i+1];
+        //     }
+        // }
+
+        //alert("array: "+ a+"\n second largest element of the array is : "+min);
+
+        //2 way
+        var a = [12,5,7,3,8];
+        for(var i=0;i<a.length;i++)
+        {
+            for(var j=i+1;j<a.length;j++)
+            {
+                if(a[j]>a[i])
+                {
+                    var temp = a[j];
+                    a[j] = a[i];
+                    a[i] = temp;
+                }
+            }
+        }
+        alert("sorted array : "+a+"\n second largest element is : "+a[1]);
+     
+    </script>
+</body>
+</html>

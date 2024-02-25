@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= [10,9,2,15,3];
+        var min = a[0];
+        for(var i=0;i<a.length;i++)
+        {
+                  if(a[i+1]<min)
+                  {
+                    min = a[i+1];
+                  }
+        }
+        alert("array: "+ a+"\n smallest element of the array is : "+min);
+    </script>
+</body>
+</html>

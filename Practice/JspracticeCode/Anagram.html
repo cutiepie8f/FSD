@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Enter the String.....!");
+        var b = prompt("Enter the String.....!");
+         if(a.length != b.length)
+         {
+               alert("Given strings are not an Anagram......!");
+         }
+         else
+         {
+               a = a.toLowerCase();
+               b = b.toLowerCase();
+               var arr = Array.from(a);
+                 var p = arr.sort();
+                 var arr1 = Array.from(b);
+                 var q = arr1.sort();
+                 var flag = 0;
+                 alert("p : "+p+" "+"q : "+q);
+                 for(var i=0;i<arr.length;i++)
+                 {
+                    if(p[i] == q[i])
+                    {
+                        continue
+                    }
+                    else{
+                        flag = 1;
+                        break;
+                    }
+                 }
+                 if(flag==0)
+                 {
+                    alert("Given string is anagram...!")
+                 }
+                 else
+                 {
+                    alert("Given string is not an anagram...!")
+                 }
+         }
+         
+    </script>
+</body>
+</html>
