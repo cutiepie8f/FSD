@@ -9,9 +9,10 @@ app.use('/', route);
 
 const Port = 8000;
 const Hostname = "localhost";
-const localDbUrl = "mongodb://127.0.0.1:27017/Zomato";  // local mongoDB URL 
+//const localDbUrl = "mongodb://127.0.0.1:27017/Zomato";  // local mongoDB URL 
 
-mongoose.connect(localDbUrl, {          // created mongoDB server connection
+const atlas = "mongodb+srv://jayakhatke:ewK2Ni64PC6DjLiS@cluster0.iyn9gh9.mongodb.net/Zomato?retryWrites=true&w=majority&appName=Cluster0";
+mongoose.connect(atlas, {          // created mongoDB server connection
     useNewUrlParser : true,
      useUnifiedTopology : true
 })

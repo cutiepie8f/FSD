@@ -54,4 +54,4 @@ document
     }
   });
 
-weather.fetchWeather(document.querySelector(".search-bar").value);
+weather.fetchWeather("Delhi");

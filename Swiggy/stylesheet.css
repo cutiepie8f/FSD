@@ -237,6 +237,11 @@ hr{
     font-size: 23px;
 
 }
+.ui-menu .ui-menu-item a {
+background-color: white;
+color: #282c3f;
+
+}
 
 /* *************offer page**************** */
 .details-section{
