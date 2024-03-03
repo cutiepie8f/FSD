@@ -15,20 +15,6 @@ exports.getRestraunt = (req, res) =>{
         
 }
 
-exports.getRestrauntByCity = (req, res) =>{
-    const {city} = req.params;
-    Restraunt.find({city_name : city},{})
-     .then(response=>{
-        res.status(200).json({
-            message : "Restraunt fetched successfully by city...!",
-            restraunt : response
-        })
-    })
-    .catch(err => {
-        res.status(500).json({error: err});
-    })
-        
-}
 
 exports.getRestrauntByLocationId = (req, res) =>{
     const {locId} = req.params;
@@ -39,5 +25,27 @@ exports.getRestrauntByLocationId = (req, res) =>{
             restraunt : response
         })
     })
+    .catch(err => {
+        res.status(500).json({error: err});
+    })
         
 }
+
+
+exports.getRestrauntById = (req, res) =>{
+    const { id } = req.params;
+    Restraunt.findById(id)
+     .then(response=>{
+        console.log(response);
+        res.status(200).json({
+            message : "Restraunt fetched successfully by ID...!",
+            restraunts : response
+        })
+    })
+    .catch(err => {
+        res.status(500).json({error: err});
+    })
+        
+}
+
+

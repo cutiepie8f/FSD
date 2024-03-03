@@ -1,12 +1,12 @@
 const { response } = require("express");
-const Meal = require("../Models/mealDB");
+const Meal = require("../Models/mealTypeDB");
 
 exports.getMealType = (req, res) =>{
     Meal.find()
      .then(response=>{
         res.status(200).json({
             message : "Meal fetched successfully...!",
-            restraunt : response
+            meal : response
         })
     })
     .catch(err => {

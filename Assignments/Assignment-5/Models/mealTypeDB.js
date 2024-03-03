@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 const mealSchema = new Schema({
-    id : Number
+    _id : String
 });
 
-module.exports = mongoose.model('mealData' , mealSchema , 'meal');
+module.exports = mongoose.model('mealData' , mealSchema , 'mealtype');

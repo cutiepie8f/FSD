@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-const restrauntSchema = new Schema({
-    name : String
+const locationSchema = new Schema({
+    name : String,
+    _id : String
     
 });
 
-module.exports = mongoose.model('locationnData' , restrauntSchema , 'location');
+module.exports = mongoose.model('locationnData' , locationSchema , 'location');

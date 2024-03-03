@@ -7,6 +7,6 @@ const route = express.Router();
 
 route.get('/location',LocationController.getLocation);
 route.get('/restraunt/:city',restrauntController.getRestrauntByCity);
-route.get('/widget ',mealController.getMealType);
+route.get('/widget',mealController.getMealType);
 
 module.exports = route;

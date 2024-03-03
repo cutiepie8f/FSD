@@ -1,5 +1,5 @@
 const { response } = require("express");
-const Restraunt = require("../Models/static");
+const Restraunt = require("../Models/restraunt");
 
 exports.getRestrauntByCity = (req, res) =>{
     const {city} = req.params;
