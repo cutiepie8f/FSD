@@ -1,5 +1,7 @@
 const { response } = require("express");
 const User = require("../Models/userDB");
+
+
 exports.postSignUp = (req, res) =>{
     const {email, password, name} = req.body;
     const userObj = new User({

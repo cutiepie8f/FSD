@@ -1,12 +1,13 @@
 #root{
     height: 1110px;
-    width: 1511px;
+    width: 1519px;
     background: #FBFBFB 0% 0% no-repeat padding-box;
     opacity: 1;
     border: solid;
     border-color: #FBFBFB;
     margin: auto;
     box-shadow: 0px 3px 6px #00000029;
+    position: absolute;
 }
 #background{
     height: 500px;

@@ -36,7 +36,6 @@ exports.getRestrauntById = (req, res) =>{
     const { id } = req.params;
     Restraunt.findById(id)
      .then(response=>{
-        console.log(response);
         res.status(200).json({
             message : "Restraunt fetched successfully by ID...!",
             restraunts : response

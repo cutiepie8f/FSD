@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./CSS_File.css"> 
+        <script type="text/javascript" src="./scriptFile.js"></script>
+</head>
+<body>
+    <div id="root">
+          <div id="background">
+            <div style="width: 1469px; margin-left: 18px; height: 500px;">
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-3">
+                    <nav id="navigation_bar">
+                        <!--login and create account button-->
+                        <div>
+                           <button type="button" class="me-4" id="login" onclick="document.getElementById('modalLogin').style.display='block'">Login</a>
+                         </div>
+                        <div>
+                           <button type="button" id="create_account" class="btn btn-outline-light" onclick="document.getElementById('signup').style.display='block'">Create an account</button>
+                       </div>
+                       <!--done-->
+                  </nav>
+                   <!--navigation done-->
+                </div>
+                 <!--coloumn-1-->
+                 <div class="col-1"></div>
+           </div>
+            <!--navigation row-1 done-->
+            <!--logo start-->
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-2">
+                  <div class="logo">
+                      <div class="logo-text">e!</div>     
+                  </div>
+                </div>
+                <div class="col-5"></div>
+          </div>  
+           <!--logo row-2 done-->
+           <!--heading start-->
+           <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6" style="block-size: 109px;">
+                <h2 class="main-text">Find the best restaurants, cafés, and bars</h2>
+            </div>
+        </div>
+         <!--main text row-3 done-->
+         <!--row-4 start-->
+         <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div>
+                    <select class="form-select form-select-sm selected-location" style="display: inline-block;" aria-label="Small select example">
+                        <option selected disabled>Please type a location</option>
+                        <option>Sarjapur Road</option>
+                        <option>Bengaluru HSR Layout</option>
+                        <option>Bengaluru Kormangala</option>
+                        <option>Bengaluru Jay Nagar</option>
+                        <option>Bengaluru</option>
+                               
+                      </select>
+
+              <div class="dropdown" style="display: inline-block;">
+                <a class="btn btn-secondary dropdown-toggle restraunt-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: #FFFFFF !important; color: #636F88;">
+                    <h3 id="dropdown-text">Search for restaurants</h3>
+                </a>
+              
+                <ul class="dropdown-menu selected-restraunt">
+                  <li><a class="dropdown-item" href="#"><img src="./image2.png" alt="food image" id="image"><h4 id="restaurant-name">The Big Chill Cakery</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+                  <hr>
+                  <li><a class="dropdown-item restaurant-name" href="#"><img src="./image2.png" alt="food image" id="image"><h4 id="restaurant-name">Punjabi Rasoi</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+                  <hr>
+                  <li><a class="dropdown-item restaurant-name" href="#"><img src="./image2.png" alt="food image" id="image"><h4 id="restaurant-name">Punjabi Rasoi</h4></a></li>
+                  <li><a class="dropdown-item" href="#"><h4 class="location-name">Sarjapur Road, Bengaluru</h4></a></li>
+                </ul>
+              </div>
+            <i class="bi bi-search"></i> 
+        
+                </div>
+            </div>
+        </div>
+         <!--main text row-3 done--> 
+   </div>      
+</div>
+ 
+      <!--background done-->
+
+       <!--quick search-->
+<div style="width: 1485px;">        
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 ms-5">
+                <h2 class="heading-1">Quick Searches</h2>
+                <h4 class="heading-2">Discover restaurants by type of meal</h4>
+        </div>
+    </div>   
+  
+      <!-- quick search done-->
+      <!--food block row-1 start-->
+      <div class="row">
+           <div class="col-1"></div>
+           <div class="col-10">
+               <div class="d-flex">
+                    <div class="d-inline-block m-3 ms-5 food-card">
+                        <div class="d-inline-block w-1">
+                            <img src="./image2.png" alt="food image" width="160px" height="160px">
+                        </div>
+                        <div class="d-inline-block text-block">
+                            <h2 class="block_text">Breakfast</h2>
+                            <p class="block_text-2">Start your day with exclusive breakfast options</p>
+                        </div>
+                    </div>
+
+                    <div class="d-inline-block m-3 ms-4 food-card">
+                        <div class="d-inline-block w-1">
+                            <img src="./image-3.png" alt="food image" width="160px" height="160px">
+                        </div>
+                        <div class="d-inline-block text-block">
+                            <h2 class="block_text">Lunch</h2>
+                            <p class="block_text-2">Start your day with exclusive breakfast options</p>
+                        </div>
+                    </div>
+
+                    <div class="d-inline-block m-3 ms-4 food-card">
+                        <div class="d-inline-block w-1">
+                            <img src="./image-4.png" alt="food image" width="160px" height="160px">
+                        </div>
+                        <div class="d-inline-block text-block">
+                            <h2 class="block_text">Snacks</h2>
+                            <p class="block_text-2">Start your day with exclusive breakfast options</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>    
+
+        <!--food block done-->
+
+        <!--food block row-2 start-->
+
+        <div class="row">
+            <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="d-flex">
+                        <div class="d-inline-block m-3 ms-5 food-card">
+                            <div class="d-inline-block w-1">
+                                <img src="./image-6.png" alt="food image" width="160px" height="160px">
+                            </div>
+                            <div class="d-inline-block text-block">
+                                <h2 class="block_text">Dinner</h2>
+                                <p class="block_text-2">Start your day with exclusive breakfast options</p>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block m-3 ms-4 food-card">
+                            <div class="d-inline-block w-1">
+                                <img src="./image-5.png" alt="food image" width="160px" height="160px">
+                            </div>
+                            <div class="d-inline-block text-block">
+                                <h2 class="block_text">Drinks</h2>
+                                <p class="block_text-2">Start your day with exclusive breakfast options</p>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block m-3 ms-4 food-card">
+                            <div class="d-inline-block w-1">
+                                <img src="./image-7.png" alt="food image" width="160px" height="160px">
+                            </div>
+                            <div class="d-inline-block text-block">
+                                <h2 class="block_text">Nightlife</h2>
+                                <p class="block_text-2">Start your day with exclusive breakfast options</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+        </div>    
+
+            <!--food block done-->
+            <!--signup Modal-->
+        <div class="modal" id="signup">
+             <a href="#" class="link-underline-light" style="text-decoration: unset;">
+                <div id="login-modal">Login</div>
+                <i class="bi bi-x-lg"></i>
+            </a>
+             
+            <a href="#" class="link-underline-light">
+                <div id="modal-box">
+                    <div id="gmail-logo">
+                        <img src="./signup.png" alt="" width= "29px"; height="22px";>
+                        </div>
+                        <span id="gmail-text">Continue with Gmail</span>
+                 </div>
+             </a>
+             
+             <a href="#" class="link-underline-light">
+                <div id="modal-box" style="margin-top: 22px;">
+                    <div id="facebook">f</div>
+                    <span id="facebook-text">Continue with Facebook</span>
+               </div>
+             </a>
+
+             <hr id="modalLine">
+             <a href="#" class="link-underline-light" style="text-decoration: unset;">
+                <span id="modal-footerPart">Don’t have account? </span>
+                <span style="color: #ED5A6B;;">Sign UP</span>
+             </a>
+        </div>
+    <!---------------------------------------------------------->
+
+    <!--Login Modal------------------->
+    
+       <div class="modal" id="modalLogin">
+        <a href="#" class="link-underline-light" style="text-decoration: unset;">
+           <div id="login-modal">Login</div>
+           <i class="bi bi-x-lg"></i>
+       </a>
+        
+       <a href="#" class="link-underline-light">
+           <div id="modal-box">
+               <div id="gmail-logo">
+                   <img src="./signup.png" alt="" width= "29px"; height="22px";>
+                   </div>
+                   <span id="gmail-text">Continue with Gmail</span>
+            </div>
+        </a>
+        
+        <a href="#" class="link-underline-light">
+           <div id="modal-box" style="margin-top: 22px;">
+               <div id="facebook">f</div>
+               <span id="facebook-text">Continue with Facebook</span>
+          </div>
+        </a>
+
+        <hr id="modalLine">
+        <a href="#" class="link-underline-light" style="text-decoration: unset;">
+           <span id="modal-footerPart">Already have an account? </span>
+           <span style="color: #ED5A6B;" onclick="document.getElementById('order-modal').style.display='block'">Login</span>
+        </a>
+   </div>
+       <!---------------->
+
+       <!--- user details modal-->
+       <div class="modal" tabindex="-1" id="user-modal">
+        <div class="modal-dialog">
+          <div class="modal-content" id="userContent-modal">
+            <div class="modal-header">
+              <h5 class="modal-title" id="user-headerPart">The Big Chill Cakery</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="user-name" id="user-details">Name</label>
+              <br>
+              <input type="text" id="user-name" placeholder="Enter your name">
+              <br> <br> 
+              <label for="user-name" id="user-details">Mobile Number</label>
+              <br>
+              <input type="text" id="user-name" placeholder="Enter mobile number">
+              <br><br>
+              <label for="user-name" id="user-details">Address</label>
+              <br>
+              <input type="text" id="user-name" placeholder="Enter your address" style="height: 172px;padding-bottom: 113px;">
+
+            </div>
+            <div class="modal-footer">
+                <div id="footer-part">
+                    <button type="button" class="btn btn-primary" id="proceed-button">PROCEED</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!--------------------->
+        <!--------order details modal---------->
+        <div class="modal" tabindex="-1" id="order-modal">
+            <div class="modal-dialog">
+              <div class="modal-content" id="userContent-modal">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="user-headerPart">The Big Chill Cakery</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="margin-left: 26px;">
+                        <div id="sign-outerpart">
+                            <div id="sign-innerpart"></div>
+                        </div>
+                       <span>
+                        <div id="cuisine-name">Gobi Manchurian `89</div>
+                        <div id="cuisine-details">Deep-fried cauliflower florets tossed in pungent spices to form a flavorsome dry curry</div>
+                       </span>
+                       <span id="cart-block">
+                         <button id="cart-button">ADD</button>
+                       </span>
+                        <hr style="width: 551px;">
+                    </div>
+                     
+                    <div style="margin-top: 33px;margin-left: 26px;">
+                        <div id="sign-outerpart">
+                            <div id="sign-innerpart"></div>
+                        </div>
+                       <span>
+                        <div id="cuisine-name">Gobi Manchurian `89</div>
+                        <div id="cuisine-details">Deep-fried cauliflower florets tossed in pungent spices to form a flavorsome dry curry</div>
+                       </span>
+                       <span id="cart-block" style="margin-top: 179px ">
+                         <button id="cart-button">
+                            <span style="position: absolute;left: 19px;color:#707070">-</span>
+                            <span>1</span>
+                            <span style="position: absolute;left: 65px ">+</span>
+                         </button>
+                       </span>
+                        <hr style="width: 551px;">
+                    </div>
+
+                    <div style="margin-top: 19px;margin-left: 26px;">
+                        <div id="sign-outerpart">
+                            <div id="sign-innerpart"></div>
+                        </div>
+                       <span>
+                        <div id="cuisine-name">Gobi Manchurian `89</div>
+                        <div id="cuisine-details">Deep-fried cauliflower florets tossed in pungent spices to form a flavorsome dry curry</div>
+                       </span>
+                       <span id="cart-block" style="margin-top: 352px ">
+                         <button id="cart-button">
+                            <span style="position: absolute;left: 19px;color:#707070">-</span>
+                            <span>1</span>
+                            <span style="position: absolute;left: 65px ">+</span>
+                         </button>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div id="footer-part">
+                       <span>
+                        <span id="total">Subtotal</span>
+                        <span style="margin-left: 170px;" id="total">`89</span>
+                       </span>
+                        <button type="button" class="btn btn-primary" id="proceed-button">Pay Now</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!----------------------------------------->
+    <!------------------------------------>
+        
+
+
+
+    </div>
+</div>
+</body>
+</html>
