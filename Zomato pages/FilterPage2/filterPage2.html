@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <div id="root">
+              
+             <!--header-->
+             <div id="header">
+                     <div style="width: 1200px; margin: auto;">
+                        <!--logo-->
+                         <div id="logo">e!</div>
+                         <!--done-->
+                         
+                         <!--login and create account button-->
+                         <div id="login">
+                            <button id="login_button">Login</button>
+                        </div>
+                        <div id="create_account">
+                            <button id="create_account_button">Create an account</button>
+                        </div>
+                        <!--done-->
+                    </div>
+             </div>
+             <!--done-->
+              
+             <div style="margin: auto; width: 1100px;">
+                        <!--Breakfast heading-->
+                        <div id="main_heading">
+                        <h2>Breakfast Places in Mumbai</h2>
+                        </div>
+                        <!--done-->
+
+                        <!--block-1-->
+                           <div id="filter_block">
+                                <!--filter-->
+                                <div id="filter"><h3>Filters</h3></div>
+                                <!--done-->
+                                <!--select location-->
+                               <div id="select_location_text"><label for="location">Select Location</label></div>
+                                  <div>
+                                      <select id="location">
+                                      <option selected disabled>Select Location</option>
+                                      <option>Bangalore</option>
+                                      <option>Gujarat</option>
+                                      <option>Bhopal</option>
+                                      <option>Delhi</option>
+                                     </select>
+                                   </div>
+                            <!--select location done-->
+                            
+                            <!--cuisine-->
+                            <div id="cuisine-text">
+                                <label>Cuisine</label>
+                                <div style="margin-top: 8px;">
+                                    <input class="checkbox" type="checkbox" id="north indian" name="cuisine">
+                                    <label class="checkbox-text" for="north indian">North Indian</label> 
+                                </div>
+                                <div>
+                                     <input class="checkbox" type="checkbox" id="south indian" name="cuisine">
+                                    <label class="checkbox-text" for="south indian">South Indian</label>
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="chineese" name="cuisine">
+                                    <label class="checkbox-text" for="chineese">Chinese</label>
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="fast food" name="cuisine">
+                                    <label class="checkbox-text" for="fast food">Fast Food</label> 
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="street food" name="cuisine">
+                                    <label class="checkbox-text" for="street food">Street Food</label>
+                                </div>
+                        </div>
+                    
+                    <!--cuisine done-->
+                    
+                    <!--cost-->
+                    <div class="cost">
+                        <label>Cost For Two</label>
+                        <div style="margin-top: 8px;">
+                             <input class="cost-radiobutton" type="radio" id="price-margin-1" name="cost">
+                            <label class="radiobutton-text" for="price-margin-1">Less than ` 500</label> 
+                        </div>
+                        <div>
+                            <input class="cost-radiobutton" type="radio" id="price-margin-2" name="cost">
+                            <label class="radiobutton-text" for="price-margin-2">` 500 to ` 1000</label>
+                        </div>
+                        <div>
+                            <input class="cost-radiobutton" type="radio" id="price-margin-3" name="cost">
+                            <label class="radiobutton-text" for="price-margin-3">` 1000 to ` 1500</label>
+                        </div>
+                        <div>
+                           <input class="cost-radiobutton" type="radio" id="price-margin-4" name="cost">
+                           <label class="radiobutton-text" for="price-margin-4">` 1500 to ` 2000</label> 
+                        </div>
+                        <div>
+                            <input class="cost-radiobutton" type="radio" id="price-margin-5" name="cost">
+                            <label class="radiobutton-text" for="price-margin-5">` 2000+</label>
+                        </div>
+                        <!--cost done-->
+                          
+                        <!--sort-->
+                        <div class="sort">
+                            <label>Sort</label>
+                            <div style="margin-top: 8px; margin-left: 7px;">
+                              <input class="sort-radiobutton" type="radio" id="price-low-to-high" name="sort">
+                              <label class="sort-radiobutton-text" for="price-low-to-high">Price low to high</label> 
+                          </div>
+                          <div style="margin-left: 7px;">
+                              <input class="sort-radiobutton" type="radio" id="price-high-to-low" name="sort">
+                              <label class="sort-radiobutton-text" for="price-high-to-low">Price high to low</label>
+                          </div>
+                       </div>
+                    </div>
+                <!--block-1 end-->
+
+                <!--block-2-->
+                <div id="block-2">
+                     <h2 id="text">Sorry. No result found</h2>
+                </div>
+                <!--block-2 end-->
+           </div>
+    </div>
+</body>
+</html>
