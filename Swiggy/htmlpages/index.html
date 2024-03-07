@@ -221,7 +221,7 @@
               <!------------->
                <!--buttons-->
                <div style="height: 51px;margin-top: 28px;margin-bottom: 2%; ">
-                   <a href="#"><button type="button" class="btn btn-outline-secondary sorting-button" style="width: 8%;text-align: left;">Filter</button>
+                   <a href="#" onclick="document.getElementById('filterModal').style.display='block'"><button type="button" class="btn btn-outline-secondary sorting-button" style="width: 8%;text-align: left;">Filter</button>
                     <img src="../images/filter.svg" alt="" style="position: absolute;left: 16%;margin-top: 12px;">
                   </a>
                    <div class="btn-group ms-2">
@@ -1142,6 +1142,130 @@
                                    
            </div>
           <!------------------>
+
+           <!---------------filter Modal--------------->
+             
+
+<!-- Modal -->
+<div class="modal" tabindex="-1" id="filterModal">
+  <div class="modal-dialog">
+    <div class="modal-content" id="filterModalContent">
+      <div class="modal-header">
+        <h5 class="modal-title" id="filterModal">Filter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <hr>
+        <div id="filterOptions" class="row">
+              <div class="col-6 border border-rgba(2, 6, 12, 0.6);">
+                <a href="#" class="link-offset-2 link-underline link-underline-opacity-0"> <p>Sort</p> </a>
+              <a href="#" class="link-offset-2 link-underline link-underline-opacity-0"><p>Delivery Time</p></a>
+              <a href="#" class="link-offset-2 link-underline link-underline-opacity-0"> <p>Cuisines</p></a>
+              <a href="#" class="link-offset-2 link-underline link-underline-opacity-0"><p>Explore</p></a>
+              <a href="#" class="link-offset-2 link-underline link-underline-opacity-0"> <p>Ratings</p></a>
+              <a href="#" class="link-offset-2 link-underline link-underline-opacity-0"><p>Veg/Non-Veg</p></a>
+            </div>
+            <div class="col-6">
+              <!-- <p id="selectFilterOption">FILTER BY</p> -->
+            <!------------veg/non veg Option-------------->
+            <!-- <div id="filterSelectOption">
+              <input type="radio" id="veg" name="foodType">
+              <label for="veg">Pure Veg</label>
+              <br>
+              <input type="radio" id="nonveg" name="foodType">
+              <label for="nonveg">Non Veg</label>
+            </div>
+          --->
+
+          <!--------------Explore----------------------->
+          <!-- <div id="filterSelectOption">
+            <input type="checkbox" id="explore">
+            <label for="explore">New on Swiggy</label>
+          </div> -->
+
+          <!--------------------Ratings----------------------------->
+          <!-- <div id="filterSelectOption">
+            <input type="checkbox" id="ratings-4.5" name="ratings">
+            <label for="ratings-4.5">Ratings 4.5+</label>
+                <br>
+            <input type="checkbox" id="ratings-4.0" name="ratings">
+            <label for="ratings-4.0">Ratings 4.0+</label>
+                  <br>
+            <input type="checkbox" id="ratings-3.5" name="ratings">
+            <label for="ratings-3.5">Ratings 3.5+</label>
+          </div> -->
+
+          <!-----------------------sort---------------------------------->
+          <!-- <div id="filterSelectOption">
+            <p id="selectFilterOption">SORT BY</p>
+            <input type="radio" id="relevenceSort" name="sort">
+            <label for="relevenceSort" style="margin-top: 10px;">Relevance (Default)</label>
+            <br>
+            <input type="radio" id="deliverySort" name="sort">
+            <label for="deliverySort" style="margin-top: 10px;">Delivery Time</label>
+            <br>
+            <input type="radio" id="ratingSort" name="sort">
+            <label for="ratingSort" style="margin-top: 10px;">Rating</label>
+            <br>
+            <input type="radio" id="lowtohighSort" name="sort">
+            <label for="lowtohighSort" style="margin-top: 10px;">Cost: Low to High</label>
+            <br>
+            <input type="radio" id="hightolowSort" name="sort">
+            <label for="hightolowSort" style="margin-top: 10px;">Cost: High to Low</label>
+
+          </div> -->
+
+          <!------------------------fastDelivery--------------------------------------->
+
+           <!-- <div id="filterSelectOption">
+            <p id="selectFilterOption">FILTER BY</p>
+            <input type="checkbox" id="fastDelivery" name="fastDelivery">
+            <label for="fastDelivery">Fast Delivery</label>
+            </div> -->
+         <!---------------------------cuisine----------------------------------------------------->
+
+         <div id="filterSelectOption">
+            <p id="selectFilterOption">FILTER BY CUISINE</p>
+            <input type="checkbox" id="americanCuisine" name="cuisine">
+            <label for="americanCuisine" style="margin-top: 10px;">American</label>
+            <br>
+            <input type="checkbox" id="andhraCuisine" name="cuisine">
+            <label for="andhraCuisine" style="margin-top: 10px;">Andhra</label>
+            <br>
+            <input type="checkbox" id="arabianCuisine" name="cuisine">
+            <label for="arabianCuisine" style="margin-top: 10px;">Arabian</label>
+            <br>
+            <input type="checkbox" id="asianCuisine" name="cuisine">
+            <label for="asianCuisine" style="margin-top: 10px;">Asian</label>
+            <br>
+            <input type="checkbox" id="awadhiCuisine" name="cuisine">
+            <label for="awadhiCuisine" style="margin-top: 10px;">Awadhi</label>
+            <br>
+            <input type="checkbox" id="BakeryCuisine" name="cuisine">
+            <label for="BakeryCuisine" style="margin-top: 10px;">Bakery</label>
+            <br>
+            <input type="checkbox" id="bangladeshiCuisine" name="cuisine">
+            <label for="bangladeshiCuisine" style="margin-top: 10px;">Bangladeshi</label>
+            <br>
+            <input type="checkbox" id="barbecueCuisine" name="cuisine">
+            <label for="barbecueCuisine" style="margin-top: 10px;">Barbecue</label>
+            <br>
+            </div>
+
+
+
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+           <!--------------------------------------------------->
+
+
     </div>
 <!----------->
    </body>
