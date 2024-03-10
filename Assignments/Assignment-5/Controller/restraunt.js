@@ -1,5 +1,5 @@
 const { response } = require("express");
-const Restraunt = require("../Models/restraunt");
+const Restraunt = require("../Models/restrauntDB");
 
 exports.getRestrauntByCity = (req, res) =>{
     const {city} = req.params;

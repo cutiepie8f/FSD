@@ -7,14 +7,17 @@ const menuController = require('../Controller/menu');
 
 const route = express.Router();
 
-route.get('/location', locationController.getLocation);
-route.get('/restraunt', restrauntController.getRestraunt);
-route.get('/rest/:locId', restrauntController.getRestrauntByLocationId);
-route.get('/restraunts/:id', restrauntController.getRestrauntById);
-route.get('/mealtype', mealtypeController.getMealtype);
-route.post('/signup', userController.postSignUp);
-route.post('/login', userController.postLogin);
-route.get('/menu/:resId', menuController.getMenuByRestrauntId);
+route.get('/location', locationController.getLocation);      //HomePage - Get Location API
+route.get('/rest/:locId', restrauntController.getRestrauntByLocationId); // HomePage - Get restraunt by location API
+route.get('/restraunts/:id', restrauntController.getRestrauntById);     //Details - Get restraunt by id API
+route.get('/mealtype', mealtypeController.getMealtype);              // HomePage - Get Mealtype API
+route.post('/signup', userController.postSignUp);                    // HomePage - POST signup API
+route.post('/login', userController.postLogin);                     // HomePage - POST Login API
+route.get('/menu/:resId', menuController.getMenuByRestrauntId);     // Details - Get Menu By Restraunt ID API
+
+//Filter
+route.get('/restraunt', restrauntController.getRestraunt);     // List of restraunts API
+route.post('/filter', restrauntController.getFilteredRestraunt);
 
 
 module.exports = route;

@@ -5,8 +5,8 @@ exports.getMealType = (req, res) =>{
     Meal.find()
      .then(response=>{
         res.status(200).json({
-            message : "Meal fetched successfully...!",
-            meal : response
+            message : "MealType fetched successfully...!",
+            mealtype : response
         })
     })
     .catch(err => {
