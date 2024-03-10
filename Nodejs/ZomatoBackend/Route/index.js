@@ -17,7 +17,7 @@ route.get('/menu/:resId', menuController.getMenuByRestrauntId);     // Details -
 
 //Filter
 route.get('/restraunt', restrauntController.getRestraunt);     // List of restraunts API
-route.post('/filter', restrauntController.getFilteredRestraunt);
+route.post('/filter', restrauntController.filteredRestraunt);
 
 
 module.exports = route;

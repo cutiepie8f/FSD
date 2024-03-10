@@ -49,7 +49,7 @@ exports.getRestrauntById = (req, res) =>{
 
 //Filter
 
-exports.getFilteredRestraunt = (req, res) =>{
+exports.filteredRestraunt = (req, res) =>{
     let { location , mealtype , lcost, hcost , cuisine , sort , page} = req.body;
 
     sort = sort ? sort : 1;   //1 - Ascending order  -1 -> Descending order
