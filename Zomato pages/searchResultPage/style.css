@@ -220,3 +220,30 @@
     width: 1000px;
 }
 
+#text-3{
+    text-align: left;
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    margin-top: 70px;
+    opacity: 1;
+    text-shadow: 0px 0px 1px;
+    position: relative;
+
+}
+
+#text-4{
+
+    text-align: left;
+    font: normal normal normal 17px/30px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    position: relative;
+    margin-top: -10px;
+    font-weight: 300;
+    text-shadow: 0px 0px 1px;
+    width: 387px;
+
+}
+
