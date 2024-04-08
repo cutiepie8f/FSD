@@ -1,0 +1,222 @@
+#main-section{
+    opacity: 1;
+    border: black;
+    border-style: solid;
+    margin: auto;
+    background-color: rgba(0, 0, 0);
+    width: 1519px;
+    margin: auto;
+}
+#bg_image{
+    height: 672px;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 22%, rgba(0, 0, 0, .3) 70%, rgba(0, 0, 0, 0.8) 90%), url("../../public/images/bg-image3.jpg");
+}
+#logo{
+    width: 186px;
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 35px 
+    
+}
+.language-dropdown{
+    background-color: rgba(0, 0, 0) !important;
+    font-size: 19px;
+    width: 132px;
+    margin-left:75%;
+    margin-top: 26px;
+}
+.signin{
+    background-color: rgb(231 14 14) !important;
+    color: white !important;
+    margin-left: 29cm;
+    position: absolute;
+    top: 30px;
+    width: 94px;
+    height: 37px;
+    font-weight: 500;
+}
+#main-text{
+    color: white;
+    font-size: 51px;
+    margin-top: 158px;
+    font-weight: 800;
+}
+#sub-text-1{
+    color: white;
+    margin-left: 314px;
+    font-size: 25px;
+    padding-top: 15px;
+}
+#sub-text-2{
+    color: white;
+    font-size: 20px;
+    margin-left: 161px;
+    padding-top: 15px;
+}
+.email-1{
+    font-size: 23px;
+    width: 407px;
+    margin-top: 15px;
+    margin-left: 52px;
+    padding-top: 7px;
+    color: darkgrey;
+}
+.start-button{
+    background-color: rgb(231 14 14) !important;
+    color: white !important;
+    width: 192px;
+    height: 58px;
+    margin-left: 472px;
+    margin-top: -118px;
+    font-size: 28px;
+    text-align: left;
+}
+#firstpage-hr
+{
+    border: 5px solid darkgrey;
+    margin-top: 167px;
+} 
+#sections{
+    height: 70vh;
+    background-color: rgba(0, 0, 0);
+}
+#page2-mainText{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 126px 0px 0px 74px;
+}
+#page2-subText{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 33px 0px 74px 74px;
+}
+#sections-hr{
+    border: 5px solid darkgrey;
+}
+#hyperlink-text{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+}
+#video-1{
+    top: 48rem;
+    left: 741px;
+}
+#video-2{
+    top: 258%;
+    left: 51%;
+}
+.video-1-container{
+    margin-top: 39px;
+}
+.image-pos{
+    z-index: 1;
+    position: relative;
+}
+#subimage{
+    width: 324px;
+    margin-left: 133px;
+    border: 2px solid darkgray;
+    height: 108px;
+    margin-top: -135px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0);
+}
+#image{
+    background-image: url("../../public/images/image-3.png");
+    height: 85px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 12px;
+}
+#text-1{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+#text-2{
+    color: blue;
+    font-size: 15px;
+    font-weight: 400;
+}
+#download-icon{
+    position: absolute;
+    top: 3%;
+    left: 68%;
+    
+}
+.email-2{
+    margin-left: 110px;
+}
+.video-size-1{
+    width: 430px;
+    height: 318px;
+}
+.link-section{
+    margin: 59px 0 66px 121px;
+}
+.video-2-size{
+    width: 76%;
+    height: 280px;
+}
+.image-pos{
+    z-index: 1;
+     position: relative;
+}
+#stranger-text{
+    margin-left: 79px; 
+    position: absolute;
+    margin-top: -82px;
+}
+#questions{
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    margin-left: 90px;
+    padding-bottom: 20px;
+}
+#accordian-textblock{
+    background-color: #2e2c2c;
+    color: rgba(255, 255, 255);
+    margin-block-end: 7px;
+    padding: 30px;
+    border-radius: 0%;
+    box-shadow: 0px 8px 0px black;
+    font-size: 24px;
+    font-weight: 400;
+   
+   
+}
+#accordian-textblock-2{
+    background-color: #2e2c2c;
+    color: white;
+    border-radius: 0%;
+    padding: 30px;
+    box-shadow: 0px 8px 0px black;
+    font-size: 24px;
+    font-weight: 400;
+   
+   
+}
+.accordian-container
+{
+    width: 80%;
+    margin-top: 2%;
+}
+.language-dropdown-2{
+    font-size: 19px;
+    margin-top: 26px;
+    
+}
+.accordion-button::after{
+    background-image:url("../../public/images/addbutton.svg");
+    filter: invert(100%) sepia(0%) saturate(7179%) hue-rotate(0deg) brightness(100%) contrast(65%);
+    background-size: cover;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../../public/images/closebutton.svg");
+    filter: invert(100%) sepia(0%) saturate(7179%) hue-rotate(0deg) brightness(100%) contrast(65%);
+}
