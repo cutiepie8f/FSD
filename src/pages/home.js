@@ -1,19 +1,10 @@
 import React from 'react';
-import '../style/stylesheet.css';
+import '../style/frontpage.css';
 
 
 class HomePage extends React.Component{
-    
-    // constructor()
-    // {
-    // }
 
-    componentDidMount()
-    {
-    }
-
-    render()
-    {
+       render(){
         return(
            
         <div id="main-section">

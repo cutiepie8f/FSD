@@ -1,0 +1,92 @@
+#section-2{
+    opacity: 1;
+    top: 0;
+    border: black;
+    border-style: solid;
+    margin: auto;
+    background-color: rgba(0, 0, 0);
+    width: 1519px;
+    margin: auto;
+    height: 150vh;
+    position: absolute;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg) ;
+}
+.logo{
+    width: 186px;
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 160px 
+    
+}
+.nav-section{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    margin: 35px 0 0 343px;
+    text-decoration: unset;
+
+}
+.search-box{
+    margin: 32px 0 0 68rem;
+    position: absolute;
+    width: 189px;
+    height: 38px;
+    border: 1px solid darkgrey;
+    text-align: left;
+    padding-left: 20px;
+    color: darkgray;
+    font-size: 20px;
+    background-color: black;
+}
+
+.search-icon{
+    position: absolute;
+    color: white;
+    margin: 33px 0 0 81rem;
+    font-size: 20px;
+}
+.dropdownButton{
+    margin: 24px 0 0 83rem;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+}
+.nav-part{
+    position: absolute;
+    left: -59px;
+}
+.movies-section{
+    margin: 31rem 0 0 86px;
+}
+.movies-heading{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    margin: 421px 0 0 87px;
+    font-weight: 600;
+}
+.movies-card{
+    display: flow;
+    position: absolute;
+    margin: 494px 0 0 0;
+    border: navajowhite;
+    background-color: black;
+}
+.shows-section{
+    margin: 120px 0 0 89px;
+
+}
+
+.shows-heading{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    margin: 45px 0 0 87px;
+    font-weight: 600;
+}
+.homeNav{
+    margin-left: 30px;
+}
+.navList{
+    margin-left: 20px;
+}
